@@ -1,0 +1,317 @@
+	/*=== Common CSS ===*/
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	box-sizing: border-box;
+	color: #666;
+}
+:root {
+	--ai-primary-color: #FF5C87;
+	--ai-primary-dark-color: #FF3279;
+	--ai-variant-color: #0088FF;
+	--ai-primary-box-shadow: rgba(255, 92, 128, 0.35);
+	--ai-highlight-color: #999;
+	--ai-hover-color: #333;
+	--ai-dark-color: #000;
+	--ai-light-color: #fff;
+	--ai-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+}
+.primary_color {
+	color: var(--ai-primary-color);
+}
+a {
+	text-decoration: none;
+	color: var(--ai-highlight-color);
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+a:hover {
+	color: var(--ai-dark-color);
+}
+i {
+	color: var(--ai-highlight-color);
+}
+li {
+	list-style: none;
+}
+ul {
+	padding-left: 0!important;
+}
+code {
+	color: var(--ai-primary-color)!important;
+}
+
+	/*=== Input box CSS ===*/	
+input:focus, textarea:focus, select:focus {
+	box-shadow: 0 0 2px 3px var(--ai-primary-box-shadow)!important;
+	border: 1px solid var(--ai-primary-color)!important;
+}
+input:checked {
+    background-color: var(--ai-primary-color)!important;
+    border-color: var(--ai-primary-color)!important;
+}
+label {
+	font-weight: 500;
+}
+.ai_button {
+	font-weight: 500;
+	background: var(--ai-primary-color);
+	color: var(--ai-light-color);
+	padding: .375rem 1.5rem;
+}
+.ai_button_trns {
+	background: transparent;
+	border: 1px solid var(--ai-primary-color);
+	color: var(--ai-hover-color);
+	padding: .375rem 1.5rem;
+}
+.ai_button:hover, .ai_button_trns:hover {
+	background: var(--ai-primary-dark-color);
+	color: var(--ai-light-color)!important;
+	box-shadow: 1px 2px 8px 0 var(--ai-primary-box-shadow);
+}
+.ai_button:focus, .ai_button_trns:focus {
+	box-shadow: 0 0 2px 3px var(--ai-primary-box-shadow)!important;
+	border: 1px solid var(--ai-primary-dark-color)!important;
+}
+
+	/*=== Bootstrap grid ===*/
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    padding-right: var(--bs-gutter-x,1.7rem)!important;
+    padding-left: var(--bs-gutter-x,1.7rem)!important;
+    max-width: none!important;
+    width: 100%!important;
+}
+
+	/*=== Header CSS ===*/
+nav#header {
+	box-shadow: var(--ai-box-shadow);
+	height: 70px;
+}
+.sidebar_toggle {
+	display: none;
+	margin-right: auto;
+}
+.logo_area {
+	margin-right: 1rem;
+}
+.sidebar_toggle input{
+	cursor: pointer;
+}
+@media (max-width: 992px) {
+	.sidebar_toggle {
+		display: block;
+	}
+}
+.logo_area {
+	min-width: 18rem;
+}
+button.dropdown-toggle {
+	padding: 0;
+}
+button.dropdown-toggle:focus {
+	box-shadow: 0 0 2px 3px var(--ai-primary-box-shadow)!important;
+}
+.admin_image {
+    display: inline-block;
+    height: 2.2rem;
+    width: 2.2rem;
+    line-height: 2.2rem;
+    border-radius: 50%;
+    background: var(--ai-primary-color);
+    text-align: center;
+}
+.admin_image i {
+	color: var(--ai-light-color);
+}
+.admin_image i:hover {
+	color: var(--ai-light-color);
+}
+nav i:hover {
+	color: var(--ai-dark-color);
+}
+.ai_logo img {
+	max-width: 50px;
+}
+#navbarToggler ul.navbar-nav {
+	margin-left: auto;
+}
+#navbarToggler ul.dropdown-menu.show {
+    right: 0;
+    left: auto;
+}
+
+	/*=== Sidebar CSS ===*/
+aside {
+	width: 270px;
+	min-height: calc(100vh - 70px);
+	background: var(--ai-light-color);
+	margin-top: 70px;
+	padding: 20px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 999;
+	box-shadow: var(--ai-box-shadow);
+	overflow-y: auto;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+@media (max-width: 992px) {
+	aside {
+		left: -270px;
+	}
+	aside.open {
+		left: 0;
+	}
+}
+.menu i {
+	color: var(--ai-highlight-color);
+	margin-right: 1rem;
+}
+.menu .sidebar-title {
+	color: var(--ai-dark-color);
+	padding: 0.6rem 0;
+	font-weight: 500;
+}
+.menu .sidebar-item a {
+	display: block;
+	text-align: left;
+	color: var(--ai-dark-color);
+}
+.menu .submenu-item, .menu .sidebar-item, .menu .sidebar-link {
+	padding: .2rem .5rem;
+}
+.menu .sidebar-item.active {
+	background: var(--ai-primary-color);
+	border-radius: 50rem;
+}
+.menu .sidebar-item {
+	margin-bottom: .3rem;
+}
+/* .menu .sidebar-item.active a {
+	padding: .2rem 1rem;
+} */
+.menu .sidebar-item.active a, .menu .sidebar-item.active i {
+	color: var(--ai-light-color);
+}
+.menu .sidebar-item.active:hover {
+	color: var(--ai-light-color);
+}
+.menu .sidebar-link {
+	display: inline-block;
+}
+.menu li a:hover, .menu li a:hover i {
+	color: var(--ai-primary-color);
+}
+.menu ul.submenu {
+	padding-left: 2rem!important;
+}
+
+	/*=== Index CSS ===*/
+#main {
+	min-height: calc(100vh - 70px);
+	margin-left: 270px;
+	margin-top: 70px;
+	background: rgb(255, 92, 135, 0.055);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+.wrapper {
+	padding: 2rem;
+}
+.card {
+	padding: 1.5rem;
+	border-radius: 0.75rem;
+	border: none;
+	box-shadow: var(--ai-box-shadow);
+}
+.form_control_icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 9;
+    transform: translate(0, -50%);
+}
+.rounded_icon label {
+    background: #eaeaea;
+    padding: .375rem 1.5rem;
+    border-radius: 50rem 0 0 50rem;
+}
+.rounded_icon .upload_icon {
+    padding: .375rem 3rem;
+}
+.rounded_icon i {
+    color: var(--ai-primary-color);
+}
+.rounded_icon input[type="file"] {
+	padding-left: .75rem;
+}
+.rounded_icon input {
+	padding-left: 4.5rem;
+}
+input.input_icon {
+	padding-left: 2.5rem;
+}
+
+	/*=== Form CSS ===*/
+.card.login_form {
+	background-image: url('../img/login.png');
+	display: flex;
+    align-items: flex-end;
+    justify-content: center;
+	min-height: 25rem;
+	background-color: var(--ai-primary-color);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.card.login_form .card {
+	background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3) );
+	backdrop-filter: blur(2rem);
+}
+#login_form .ai_button {
+	background: var(--ai-variant-color);
+	color: var(--ai-light-color);
+}
+#login_form .ai_button:hover {
+	background: var(--ai-light-color);
+	color: var(--ai-variant-color)!important;
+}
+#login_form .ai_button:focus, .login_form input[type="checkbox"]:focus {
+	border-color: var(--ai-variant-color)!important;
+}
+#login_form input[type="checkbox"]:checked {
+	background-color: var(--ai-variant-color)!important;
+}
+	
+	/*=== Table CSS ===*/
+.ai_table td, .ai_table th, .ai_table tr {
+	padding: 0.7rem 1.2rem;
+}
+.ai_table thead {
+	background-color: var(--ai-primary-color);
+}
+.ai_table thead {
+	text-align: center;
+}
+.ai_table tr td {
+	white-space: nowrap;
+}
+	/*=== DataTable CSS ===*/
+#datatable_length, #datatable_filter, #datatable_paginate, #datatable_info {
+	margin: 1rem 0;
+}
+.page-link {
+    color: var(--ai-primary-color);
+}
+.page-item.active .page-link {
+    background-color: var(--ai-primary-color);
+    border-color: var(--ai-primary-dark-color);
+}
+.page-link:focus {
+    box-shadow: 0 0 2px 3px var(--ai-primary-box-shadow);
+}

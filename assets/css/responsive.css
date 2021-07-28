@@ -1,0 +1,44 @@
+
+@media (max-width: 992px) {
+	#main {
+		margin-left: 0;
+	}
+	#navbarToggler ul.navbar-nav {
+	    flex-direction: row;
+	    justify-content: space-evenly;
+	    background: var(--ai-light-color);
+	    border-bottom: 1px solid var(--ai-primary-box-shadow);
+	    border-top: 1px solid var(--ai-primary-box-shadow);
+	    padding: 0.5rem 0;
+	    margin: 0.5rem 0;
+	}
+	#navbarToggler .navbar-nav .dropdown-menu {
+	    position: absolute; 
+	}
+	.login_form .card{
+		background-image: none;
+	}
+}
+
+@media (max-width: 768px) {
+	#datatable_length, #datatable_filter, #datatable_paginate, #datatable_info {
+		margin: 0.5rem 0;
+	}
+	.logo_area {
+		min-width: 16rem;
+	}
+}
+
+	
+@media (max-width: 500px) {
+	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+		padding-right: var(--bs-gutter-x,1rem)!important;
+		padding-left: var(--bs-gutter-x,1rem)!important;
+	}
+	.wrapper {
+		padding: 2rem 1em;
+	}
+	.card {
+		padding: 1rem;
+	}
+}
