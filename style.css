@@ -1,0 +1,104 @@
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+body {
+    background-image: linear-gradient(to right bottom, #a8ff78, #78ffd6);
+}
+#form {
+    max-width: 1050px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5rem 0;
+}
+.card {
+    padding: 2rem;
+    border-radius: 0.75rem;
+    border: none;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    #form {
+        padding: 2rem 0;
+    }   
+}
+#form .card {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    backdrop-filter: blur(5rem);
+}
+
+    /*=== Input CSS ===*/ 
+input, textarea, select {
+    color: #666!important;
+    border-radius: .6rem!important;
+}      
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 2px 3px rgba(79, 226, 47, 0.3)!important;
+    border: 1px solid transparent!important;
+}
+input:checked {
+    background-color: #4FE22F!important;
+    border-color: #4FE22F!important;
+}
+input::placeholder, textarea::placeholder, select::placeholder {
+    color: #787878!important;
+}
+label {
+    font-weight: 500;
+    color: #444;
+}
+.required {
+    color: #6FFF0F;
+    font-weight: 900;
+}
+.ai_button {
+    font-weight: 500;
+    background: #4FE22F;
+    color: #fff;
+    padding: .6rem 2.5rem;
+}
+.ai_button:hover {
+    background: #4FC22F;
+    color: #fff;
+}
+.ai_button:focus {
+    box-shadow: 0 0 2px 3px rgba(79, 226, 47, 0.5);
+}
+.section_heading strong {
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(to right bottom, #00b09b, #96c93d);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.6rem;
+    border-radius: 50rem;
+}
+.choices__inner {
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    padding: .375rem .75rem;
+    border-radius: .6rem!important;
+}
+.choices__inner input {
+    background-color: #fff;
+    margin: 0;
+}
+.choices__inner input:focus {
+    box-shadow: none!important;
+}
+.choices__list--multiple .choices__item {
+    background: #4FC22F;
+}
+
+/*----------------------------------------*/
+/*  Responsive CSS
+/*----------------------------------------*/
+
+@media (max-width: 768px) {
+    .card {
+        padding: 0.6rem;
+    }
+    body {
+        font-size: 0.95rem;
+    }
+}
