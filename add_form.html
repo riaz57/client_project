@@ -1,0 +1,239 @@
+<!doctype html>
+<html  lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Your title</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- all css here -->
+    <!-- bootstrap v5 css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <div class="container-fluid">
+            <div class="card">
+                <h4 class="text-center my-4">Add to Database</h4>
+                <div class="text-center"><p>field with an asterisk (<span class="required">*</span>) is must be filled</p></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="mb-2" for="add_opt">Choose what to add</label>
+                            <div class="input-group">
+                                <select id="add_opt" class="form-select">
+                                    <option selected disabled>Select any option</option>
+                                    <option value="designation">Designation</option>
+                                    <option value="department">Department</option>
+                                    <option value="post">Post</option>
+                                    <option value="grade">Grade</option>
+                                    <option value="payscale">Pay Scale</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="option_group">
+                            <div class="designation">
+                                <div class="section_heading mb-4 mt-5">
+                                    <strong>Result from database :</strong>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2" for="dsg">Designation</label>
+                                    <div class="input-group">
+                                        <select id="dsg" class="form-select" aria-label="Default select example" required>
+                                            <option value="male" selected disabled>M.D (Managing Director)</option>
+                                            <option value="female" disabled>C.E.O (Chief Executive Officer)</option>
+                                            <option value="female" disabled>Manager</option>
+                                            <option value="female" disabled>Assistant Manager</option>
+                                            <option value="female" disabled>Worker</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="department">
+                                <div class="section_heading mb-4 mt-5">
+                                    <strong>Result from database :</strong>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2" for="dptmnt">Department</label>
+                                    <div class="input-group">
+                                        <select id="dptmnt" class="form-select" aria-label="Default select example" required>
+                                            <option value="agr" selected disabled>Agriculture</option>
+                                            <option value="arch" disabled>Architechture & Construction</option>
+                                            <option value="it" disabled>Information Technology</option>
+                                            <option value="health" disabled>Health Science</option>
+                                            <option value="bsns" disabled>Business & Finance</option>
+                                            <option value="edu" disabled>Education & Training</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="post">
+                                <div class="section_heading mb-4 mt-5">
+                                    <strong>Result from database :</strong>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2" for="pst">Post</label>
+                                    <div class="input-group">
+                                        <select id="pst" class="form-select" aria-label="Default select example" required>
+                                            <option value="male" selected disabled>M.D (Managing Director)</option>
+                                            <option value="female" disabled>C.E.O (Chief Executive Officer)</option>
+                                            <option value="female" disabled>Manager</option>
+                                            <option value="female" disabled>Assistant Manager</option>
+                                            <option value="female" disabled>Worker</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grade">
+                                <div class="section_heading mb-4 mt-5">
+                                    <strong>Result from database :</strong>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2" for="grd">Grade</label>
+                                    <div class="input-group">
+                                        <select id="grd" class="form-select" required>
+                                            <option value="grade1" selected disabled>Grade 1</option>
+                                            <option value="grade2" disabled>Grade 2</option>
+                                            <option value="grade3" disabled>Grade 3</option>
+                                            <option value="grade4" disabled>Grade 4</option>
+                                            <option value="grade5" disabled>Grade 5</option>
+                                            <option value="grade6" disabled>Grade 6</option>
+                                            <option value="grade7" disabled>Grade 7</option>
+                                            <option value="grade8" disabled>Grade 8</option>
+                                            <option value="grade9" disabled>Grade 9</option>
+                                            <option value="grade10" disabled>Grade 10</option>
+                                            <option value="grade11" disabled>Grade 11</option>
+                                            <option value="grade12" disabled>Grade 12</option>
+                                            <option value="grade13" disabled>Grade 13</option>
+                                            <option value="grade14" disabled>Grade 14</option>
+                                            <option value="grade15" disabled>Grade 15</option>
+                                            <option value="grade16" disabled>Grade 16</option>
+                                            <option value="grade17" disabled>Grade 17</option>
+                                            <option value="grade18" disabled>Grade 18</option>
+                                            <option value="grade19" disabled>Grade 19</option>
+                                            <option value="grade20" disabled>Grade 20</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payscale">
+                                <div class="section_heading mb-4 mt-5">
+                                    <strong>Result from database :</strong>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2" for="pay_scl">Pay Scale</label>
+                                    <div class="input-group">
+                                        <select id="pay_scl" class="form-select" required>
+                                            <option value="78000" selected disabled>78,000</option>
+                                            <option value="66000" disabled>66,000</option>
+                                            <option value="56000" disabled>56,000</option>
+                                            <option value="50000" disabled>50,000</option>
+                                            <option value="43000" disabled>43,000</option>
+                                            <option value="35000" disabled>35,000</option>
+                                            <option value="29000" disabled>29,000</option>
+                                            <option value="23000" disabled>23,000</option>
+                                            <option value="22000" disabled>22,000</option>
+                                            <option value="16000" disabled>16,000</option>
+                                            <option value="12000" disabled>12,000</option>
+                                            <option value="11300" disabled>11,300</option>
+                                            <option value="11000" disabled>11,000</option>
+                                            <option value="10200" disabled>10,200</option>
+                                            <option value="9700" disabled>9,700</option>
+                                            <option value="9300" disabled>9,300</option>
+                                            <option value="9000" disabled>9,000</option>
+                                            <option value="8800" disabled>8,800</option>
+                                            <option value="8500" disabled>8,500</option>
+                                            <option value="8250" disabled>8,250</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div id="single_form">
+                            <div class="designation">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label class="mb-2">Add Designation</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Managing Director">
+                                    </div>
+                                    <div class="mb-3 pt-3 text-center">
+                                        <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="department">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label class="mb-2">Add Department</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Information Technology">
+                                    </div>
+                                    <div class="mb-3 pt-3 text-center">
+                                        <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
+                                    </div>
+                                </form>
+                            </div> 
+                            <div class="post">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label class="mb-2">Add Post</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Manager">
+                                    </div>
+                                    <div class="mb-3 pt-3 text-center">
+                                        <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
+                                    </div>
+                                </form>
+                            </div> 
+                            <div class="grade">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label class="mb-2">Add Grade</label>
+                                        <input type="text" class="form-control" placeholder="e.g. Grade 3">
+                                    </div>
+                                    <div class="mb-3 pt-3 text-center">
+                                        <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
+                                    </div>
+                                </form>
+                            </div> 
+                            <div class="payscale">
+                                <form action="#">
+                                    <div class="mb-3">
+                                        <label class="mb-2">Add Pay Scale</label>
+                                        <input type="text" class="form-control" placeholder="e.g. 12300">
+                                    </div>
+                                    <div class="mb-3 pt-3 text-center">
+                                        <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
+                                    </div>
+                                </form>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- all js here -->
+    <!-- jquery latest version -->
+    <script src="js/jquery.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('#add_opt').on('change', function() {
+                var val = $(this).val();
+
+                $("#option_group, #single_form").children().slideUp('400');
+                $("#option_group, #single_form").children(".".concat(val)).slideDown('400');
+            });
+        });
+    </script>
+</body>
+</html>

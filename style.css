@@ -4,7 +4,9 @@
 /*----------------------------------------*/
 
 body {
-    background-image: linear-gradient(to right bottom, #a8ff78, #78ffd6);
+    background-image: linear-gradient(to right bottom, #a8ff78 13%, #78ffd6 115%);
+    min-height: 100vh;
+    overflow-y: auto;
 }
 #form {
     max-width: 1050px;
@@ -17,18 +19,20 @@ body {
     border-radius: 0.75rem;
     border: none;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-}
-@media (max-width: 768px) {
-    #form {
-        padding: 2rem 0;
-    }   
+    min-height: 73vh;
 }
 #form .card {
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
-    backdrop-filter: blur(5rem);
+    backdrop-filter: blur(2rem);
 }
 
-    /*=== Input CSS ===*/ 
+
+/*----------------------------------------*/
+/*  Index CSS
+/*----------------------------------------*/
+
+/*-------------  default styling    ----------------*/
+
 input, textarea, select {
     color: #666!important;
     border-radius: .6rem!important;
@@ -91,10 +95,25 @@ label {
 }
 
 /*----------------------------------------*/
+/*  Add_form CSS
+/*----------------------------------------*/
+
+#option_group > div, #single_form > div {
+    display: none;
+}
+
+
+
+
+
+/*----------------------------------------*/
 /*  Responsive CSS
 /*----------------------------------------*/
 
 @media (max-width: 768px) {
+    #form {
+        padding: 2rem 0;
+    } 
     .card {
         padding: 0.6rem;
     }
