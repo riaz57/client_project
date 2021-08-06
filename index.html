@@ -1,718 +1,708 @@
 <!doctype html>
 <html  lang="">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Your title</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Your title</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- all css here -->
+	<!-- choices css -->
 	<link rel="stylesheet" href="css/choices.min.css"/>
-	<!-- bootstrap v3.3.6 css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- font-awesome css -->
-    <link rel="stylesheet" href="css/all.min.css">
+	<!-- bootstrap v5 css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome css -->
+	<link rel="stylesheet" href="css/all.min.css">
 	<!-- style css -->
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+	<div id="scroll_to_top">
+		<a href="#form"><i class="fas fa-arrow-up"></i></a>
+	</div>
+
+	<div id="aside_box">
+		<div class="aside_box_content">
+			<ol>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="add_form.html">Add data to Database</a></li>
+			</ol>
+		</div>
+	</div>
 	
-	<div id="form">  
-	  <div class="container-fluid">
-  		  <div class="card">
-  			<h4 class="text-center my-4">Individual Stuff Information</h4>
-			<div class="text-center"><p>field with an asterisk (<span class="required">*</span>) is must be filled</p></div>	
-  			<form action="#">
-  			  <div class="input_section mb-3">
-  			  	 <div class="section_heading mb-4">
-  			  	  <hr>
-	  			  <strong class="">General Informations :</strong>
-	  			 </div>
-	  			 <div class="row">
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="id">Id Number <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="id" placeholder="e.g. 001" required>
-		            </div>
-		           </div>
-		         </div>  
-		         <div class="row">
-		           <div class="col-sm-4">
-		            <div class="mb-3">
-		              <label class="mb-2" for="fname">First Name <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="fname" placeholder="e.g. Istiak" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-4">
-		            <div class="mb-3">
-		              <label class="mb-2" for="mname">Middle Name</label>
-		              <input type="text" class="form-control" id="mname" placeholder="e.g. Hossain">
-		            </div>
-		           </div>
-		           <div class="col-sm-4">
-		            <div class="mb-3">
-		              <label class="mb-2" for="lname">Last Name <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="lname" placeholder="e.g. Saimon" required>
-		            </div>
-		           </div>
-		      	  </div>
-		      	  <div class="row">
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="fr_name">Father's Name <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="fr_name" placeholder="e.g. Ameer Hossain" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="mr_name">Mother's Name <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="mr_name" placeholder="e.g. Nur Banu" required>
-		            </div>
-		           </div>
-		      	  </div>
-
-		      	  <div class="row">
-		      	  	<strong class="mb-2" style="text-decoration: underline;">Present Address</strong>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="house_nm">House No.</label>
-		              <input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
-		            </div>
-		           </div>
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="district">District <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="district" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose district</option>
-					      <option value="Chattogram">Chattogram</option>
-					      <option value="Dhaka">Dhaka</option>
-					      <option value="Chandpur">Chandpur</option>
-					      <option value="Kumilla">Kumilla</option>
-					      <option value="Barisal">Barisal</option>
-					      <option value="Bogra">Bogra</option>
-					      <option value="Faridpur">Faridpur</option>
-					      <option value="Noakhali">Noakhali</option>
-					      <option value="Pabna">Pabna</option>
-					      <option value="Dinajpur">Dinajpur</option>
-					      <option value="Sylhet">Sylhet</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="upazilla" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose upazilla/division</option>
-					      <option value="Anowara">Anowara</option>
-					      <option value="Banshkhali">Banshkhali</option>
-					      <option value="Lohagara">Lohagara</option>
-					      <option value="Chandanaish">Chandanaish</option>
-					      <option value="Hathazari">Hathazari</option>
-					      <option value="Mirsharai">Mirsharai</option>
-					      <option value="Raozan">Raozan</option>
-					      <option value="Patiya">Patiya</option>
-					      <option value="Rangunia">Rangunia</option>
-					      <option value="Fatikchhari">Fatikchhari</option>
-					      <option value="Boalkhali">Boalkhali</option>
-					      <option value="Satkaniya">Satkaniya</option>
-					      <option value="Sitakunda">Sitakunda</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="p_station" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose Police Station</option>
-					      <option value="Anowara">Anowara</option>
-					      <option value="Banshkhali">Banshkhali</option>
-					      <option value="Lohagara">Lohagara</option>
-					      <option value="Chandanaish">Chandanaish</option>
-					      <option value="Hathazari">Hathazari</option>
-					      <option value="Mirsharai">Mirsharai</option>
-					      <option value="Raozan">Raozan</option>
-					      <option value="Patiya">Patiya</option>
-					      <option value="Rangunia">Rangunia</option>
-					      <option value="Fatikchhari">Fatikchhari</option>
-					      <option value="Boalkhali">Boalkhali</option>
-					      <option value="Satkaniya">Satkaniya</option>
-					      <option value="Sitakunda">Sitakunda</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_code">Post Code</label>
-		              <input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
-		            </div>
-		           </div>
-		      	  </div>
-	      	 	  
-		      	  <div class="row mb-4">
-		      	  	<strong class="mb-2" style="text-decoration: underline;">Permanent Address</strong>
-		      	  	<div class="col-12 my-3">
-		      	  	  <div class="form-check form-switch">
-				       <input class="form-check-input" type="checkbox" id="common_add">
-				       <label class="form-check-label px-2" for="common_add">Same as present addreses</label>
-				      </div>
-		      	  	</div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="house_nm">House No.</label>
-		              <input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
-		            </div>
-		           </div>
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="district">District <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="district" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose district</option>
-					      <option value="Chattogram">Chattogram</option>
-					      <option value="Dhaka">Dhaka</option>
-					      <option value="Chandpur">Chandpur</option>
-					      <option value="Kumilla">Kumilla</option>
-					      <option value="Barisal">Barisal</option>
-					      <option value="Bogra">Bogra</option>
-					      <option value="Faridpur">Faridpur</option>
-					      <option value="Noakhali">Noakhali</option>
-					      <option value="Pabna">Pabna</option>
-					      <option value="Dinajpur">Dinajpur</option>
-					      <option value="Sylhet">Sylhet</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="upazilla" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose upazilla/division</option>
-					      <option value="Anowara">Anowara</option>
-					      <option value="Banshkhali">Banshkhali</option>
-					      <option value="Lohagara">Lohagara</option>
-					      <option value="Chandanaish">Chandanaish</option>
-					      <option value="Hathazari">Hathazari</option>
-					      <option value="Mirsharai">Mirsharai</option>
-					      <option value="Raozan">Raozan</option>
-					      <option value="Patiya">Patiya</option>
-					      <option value="Rangunia">Rangunia</option>
-					      <option value="Fatikchhari">Fatikchhari</option>
-					      <option value="Boalkhali">Boalkhali</option>
-					      <option value="Satkaniya">Satkaniya</option>
-					      <option value="Sitakunda">Sitakunda</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="p_station" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose Police Station</option>
-					      <option value="Anowara">Anowara</option>
-					      <option value="Banshkhali">Banshkhali</option>
-					      <option value="Lohagara">Lohagara</option>
-					      <option value="Chandanaish">Chandanaish</option>
-					      <option value="Hathazari">Hathazari</option>
-					      <option value="Mirsharai">Mirsharai</option>
-					      <option value="Raozan">Raozan</option>
-					      <option value="Patiya">Patiya</option>
-					      <option value="Rangunia">Rangunia</option>
-					      <option value="Fatikchhari">Fatikchhari</option>
-					      <option value="Boalkhali">Boalkhali</option>
-					      <option value="Satkaniya">Satkaniya</option>
-					      <option value="Sitakunda">Sitakunda</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
-		              <input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-3 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="p_code">Post Code</label>
-		              <input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
-		            </div>
-		           </div>
-		      	  </div>
-
-		          <div class="row">
-		           <div class="col-sm-6 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="phone">Phone <span class="required">*</span></label>
-		              <input type="number" class="form-control" id="phone" placeholder="e.g. 01889922334" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-6 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="alt_phone">Alternate Phone</label>
-		              <input type="number" class="form-control" id="alt_phone" placeholder="e.g. 01889922335">
-		            </div>
-		           </div>
-		      	  </div>
-		      	  <div class="row">
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="mail">Email</label>
-		              <input type="email" class="form-control" id="mail" placeholder="e.g. automateinfosys@gmail.com">
-		            </div>
-		           </div>
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="nid">NID <span class="required">*</span></label>
-		              <input type="number" class="form-control" id="nid" placeholder="e.g. 101110222211525" required>
-		            </div>
-		           </div>
-		           <div class="col-sm-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="tin">TIN Number</label>
-		              <input type="number" class="form-control" id="tin" placeholder="e.g. 101110222211525">
-		            </div>
-		           </div>
-		           <div class="col-sm-6 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="image">Image <span class="required">*</span></label>
-		              <input type="file" class="form-control" id="image" required>
-		            </div>
-		           </div>
-		            <div class="col-sm-4 col-6">
-		             <div class="mb-3">
-		              <label class="mb-2" for="gender">Gender <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="gender" class="form-select" required>
-					      <option selected disabled>Choose gender</option>
-					      <option value="married">Male</option>
-					      <option value="unmarried">Female</option>
-					    </select>
-		              </div>
-		             </div>
-		      	   </div>
-		           <div class="col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="mstatus">Marital Status <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="mstatus" class="form-select" required="">
-					      <option selected disabled>Choose marital status</option>
-					      <option value="married">Married</option>
-					      <option value="unmarried">Unmarried</option>
-					      <option value="unmarried">Divorced</option>
-					      <option value="unmarried">Widowed</option>
-					      <option value="unmarried">Others</option>
-					    </select>
-		              </div>
-		            </div>
-		      	   </div>
-		      	   <div class="col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="religion">Religion</label>
-		              <div class="input-group mb-3">
-					    <select id="religion" class="form-select" aria-label="Default select example">
-					      <option selected disabled>Choose religion</option>
-					      <option value="Islam">Islam</option>
-					      <option value="Hinduism">Hinduism</option>
-					      <option value="Christianity">Christianity</option>
-					      <option value="Buddhism">Buddhism</option>
-					      <option value="Others">Others</option>
-					    </select>
-		              </div>
-		            </div>
-		      	   </div>
-		      	   <div class="col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="blood_gr">Blood Group <span class="required">*</span></label>
-		              <div class="input-group mb-3">
-					    <select id="blood_gr" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose blood group</option>
-					      <option value="o+">O (+ve)</option>
-					      <option value="o-">O (-ve)</option>
-					      <option value="a+">A (+ve)</option>
-					      <option value="a-">A (-ve)</option>
-					      <option value="b+">B (+ve)</option>
-					      <option value="b-">B (-ve)</option>
-					      <option value="ab+">AB (+ve)</option>
-					      <option value="ab-">AB (-ve)</option>
-					    </select>
-		              </div>
-		            </div>
-		      	   </div>
-		      	   <div class="col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="nationality">Nationality <span class="required">*</span></label>
-		              <div class="input-group mb-3">
-					    <select id="nationality" class="form-select" aria-label="Default select example" required>
-					      <option value="Bangladeshi" selected>Bangladeshi</option>
-					      <option value="Indian">Indian</option>
-					      <option value="American">American</option>
-					      <option value="British">British</option>
-					      <option value="Others">Others</option>
-					    </select>
-		              </div>
-		            </div>
-		      	   </div>
-		      	   <div class="col-12">
-		            <div class="mb-3">
-		              <div class="form-check form-switch my-3">
-					   <input class="form-check-input" type="checkbox" value="" id="quota">
-					   <label class="form-check-label px-2" for="quota">Child/Grandchild of Freedom Fighter</label>
-					  </div>
-		            </div>
-		      	   </div>
-		      	  </div>
-  			   </div>
-				
-  			   <div class="input_section mb-3">
-  			   	<div class="section_heading mb-4">
-  			   	  <hr>
-	  			  <strong class="">Job Related :</strong>
-	  			</div>
-	  			<div class="row">
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="designation">Designation <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="designation" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose designation</option>
-					      <option value="male">M.D (Managing Director)</option>
-					      <option value="female">C.E.O (Chief Executive Officer)</option>
-					      <option value="female">Manager</option>
-					      <option value="female">Assistant Manager</option>
-					      <option value="female">Worker</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="dptmnt">Department <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="dptmnt" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose department</option>
-					      <option value="agr">Agriculture</option>
-					      <option value="arch">Architechture & Construction</option>
-					      <option value="it">Information Technology</option>
-					      <option value="health">Health Science</option>
-					      <option value="bsns">Business & Finance</option>
-					      <option value="edu">Education & Training</option>
-					    </select>
-		              </div>
-		             </div>
-		            </div>
-		            <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="post">Post <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="post" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose post</option>
-					      <option value="male">M.D (Managing Director)</option>
-					      <option value="female">C.E.O (Chief Executive Officer)</option>
-					      <option value="female">Manager</option>
-					      <option value="female">Assistant Manager</option>
-					      <option value="female">Worker</option>
-					    </select>
-		              </div>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="rcrt_date">Recruitement Date <span class="required">*</span></label>
-		              <input type="date" class="form-control" id="rcrt_date" required>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="grade">Grade <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="grade" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose grade</option>
-					      <option value="grade1">Grade 1</option>
-					      <option value="grade2">Grade 2</option>
-					      <option value="grade3">Grade 3</option>
-					      <option value="grade4">Grade 4</option>
-					      <option value="grade5">Grade 5</option>
-					      <option value="grade6">Grade 6</option>
-					      <option value="grade7">Grade 7</option>
-					      <option value="grade8">Grade 8</option>
-					      <option value="grade9">Grade 9</option>
-					      <option value="grade10">Grade 10</option>
-					      <option value="grade11">Grade 11</option>
-					      <option value="grade12">Grade 12</option>
-					      <option value="grade13">Grade 13</option>
-					      <option value="grade14">Grade 14</option>
-					      <option value="grade15">Grade 15</option>
-					      <option value="grade16">Grade 16</option>
-					      <option value="grade17">Grade 17</option>
-					      <option value="grade18">Grade 18</option>
-					      <option value="grade19">Grade 19</option>
-					      <option value="grade20">Grade 20</option>
-					    </select>
-		              </div>
-		             </div>
-		            </div>
-		            <div class="col-lg-3 col-sm-4 col-6">
-		             <div class="mb-3">
-		              <label class="mb-2" for="pay_scale">Pay Scale <span class="required">*</span></label>
-		              <div class="input-group">
-					    <select id="pay_scale" class="form-select key num1" required>
-					      <option value="" selected disabled>Choose pay scale</option>	
-					      <option value="78000">78,000</option>
-					      <option value="66000">66,000</option>
-					      <option value="56000">56,000</option>
-					      <option value="50000">50,000</option>
-					      <option value="43000">43,000</option>
-					      <option value="35000">35,000</option>
-					      <option value="29000">29,000</option>
-					      <option value="23000">23,000</option>
-					      <option value="22000">22,000</option>
-					      <option value="16000">16,000</option>
-					      <option value="12000">12,000</option>
-					      <option value="11300">11,300</option>
-					      <option value="11000">11,000</option>
-					      <option value="10200">10,200</option>
-					      <option value="9700">9,700</option>
-					      <option value="9300">9,300</option>
-					      <option value="9000">9,000</option>
-					      <option value="8800">8,800</option>
-					      <option value="8500">8,500</option>
-					      <option value="8250">8,250</option>
-					    </select>
-		               </div>
-		              </div>
-		             </div>
-		             <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="hs_rent">House Rent <span class="required">*</span></label>
-		              <input type="number" class="form-control key num2" id="hs_rent" placeholder="e.g. 7800" required>
-		             </div>
-		            </div>
-		            <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="taDa">TA/DA <span class="required">*</span></label>
-		              <input type="number" class="form-control key num3" placeholder="e.g. 4500" id="taDa" required>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="gratuity">Gratuity <span class="required">*</span></label>
-		              <input type="number" class="form-control key num4" placeholder="e.g. 1200" id="gratuity" required>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4 col-6">
-		            <div class="mb-3">
-		              <label class="mb-2" for="bonus">Bonus <span class="required">*</span></label>
-		              <input type="number" class="form-control key num5" placeholder="e.g. 1500" id="bonus" required>
-		            </div>
-		           </div>
-		           <div class="col-lg-3 col-sm-4">
-		            <div class="mb-3">
-		              <label class="mb-2" for="total">Total</label>
-		              <input type="number" class="form-control" id="total" value="12300" readonly>
-		            </div>
-		           </div>
-		      	</div>
-		      	<div class="row">
-			     <div class="col-sm-6">
-		          <div class="mb-3">
-		            <label class="mb-2" for="project">Project <span class="required">*</span></label>
-		            <textarea class="form-control" rows="4" placeholder="e.g. Employee portal management" id="project" required></textarea>
-		          </div>
-		         </div>
-		         <div class="col-sm-6">
-		         	<div class="row">
-			         	<div class="col-sm-12 col-6">
-				          <div class="mb-3">
-				           <label class="mb-2" for="attndn">Attendance <span class="required">*</span></label>
-				           <input type="number" class="form-control" placeholder="e.g. 256" id="attndn" required>
-				          </div>
-				        </div>
-				        <div class="col-sm-12 col-6">
-				          <div class="mb-3">
-				           <label class="mb-2" for="leave">Leave <span class="required">*</span></label>
-				           <input type="number" class="form-control" placeholder="e.g. 86" id="leave" required>
-				          </div>
-				        </div>
-			        </div>
-		         </div>
-		         <div class="col-sm-4 col-6">
-		          <div class="mb-3">
-		           <label class="mb-2" for="inc_date">Incremental Date <span class="required">*</span></label>
-		           <input type="date" class="form-control" id="inc_date" required>
-		          </div>
-		         </div>
-		         <div class="col-sm-4 col-6">
-		          <div class="mb-3">
-		           <label class="mb-2" for="prfrmnc">Performance <span class="required">*</span></label>
-		           <input type="text" class="form-control" placeholder="e.g. " id="prfrmnc" required>
-		          </div>
-		         </div>
-		         <div class="col-sm-4 col-6">
-		          <div class="mb-3">
-		           <label class="mb-2" for="eval">Evaluation <span class="required">*</span></label>
-		           <input type="text" class="form-control" placeholder="e.g. " id="eval" required>
-		          </div>
-		         </div>
-		         <div class="col-sm-4 col-6">
-		          <div class="mb-3">
-		           <label class="mb-2" for="promo">Promotion <span class="required">*</span></label>
-		           <input type="text" class="form-control" placeholder="e.g. " id="promo" required>
-		          </div>
-		         </div>
-			    </div>
-	  		   </div>
-
-	  		   <div class="input_section mb-3">
-  			   	<div class="section_heading mb-4">
-  			   	  <hr>
-	  			  <strong class="">Talent Profile :</strong>
-	  			</div>
-	  			<div class="row">
-	  			  <div class="col-12">
-		            <div class="mb-3">
-		              	<label class="mb-2" for="training">Training</label>
-					    <textarea id="training" class="form-control" rows="4" placeholder="e.g. 1 year of Professional training in Responsive Web Design and Front-end Development"></textarea>
-		            </div>
-		          </div>
-		          <div class="col-12">
-		            <div class="mb-3">
-		              	<div class="form-group">
-		              	  <label class="mb-2" for="skill">Skills</label>
-				          <select id="skill" class="choices form-select multiple-remove" multiple="multiple">
-			                  <option value="html">HTML5</option>
-			                  <option value="css">CSS3</option>
-			                  <option value="jqery">JQuery</option>
-			                  <option value="bootstrap">Bootstrap</option>
-			                  <option value="php">PHP</option>
-			                  <option value="mysql">MySQL</option>
-			                  <option value="wordpress">Wordpress</option>
-			                  <option value="photoshop">Photoshop</option>
-			                  <option value="illustrator">Illustrator</option>
-				          </select>
-				        </div>
-		            </div>
-		          </div>
-		          <div class="col-md-8 col-12">
-		            <div class="mb-3">
-		              	<label class="mb-2" for="crfct">Certificate</label>
-	              		<input type="text" class="form-control" placeholder="e.g. Responsive Web Design and Front-end Development"  id="crfct">
-		            </div>
-		          </div>
-		          <div class="col-md-4 col-6">
-		            <div class="mb-3">
-		              	<label class="mb-2" for="degree">Degree</label>
-	              		<div class="input-group">
-					      <select id="degree" class="form-select">
-					        <option selected disabled>Select degree</option>
-					        <option value="">B.Sc</option>
-					        <option value="56000">B.A</option>
-					        <option value="50000">M.Sc</option>
-					        <option value="43000">M.B.A</option>
-					      </select>
-		                </div>
-		            </div>
-		          </div>
-	  			</div>
-  			   </div>
-
-			  <div class="input_section mb-3">
-  			   	<div class="section_heading mb-4">
-  			   	  <hr>
-	  			  <strong class="">Health Informations :</strong>
-	  			</div>
-	  			<div class="row">
-	  			  <div class="col-sm-4 col-6">
-		            <div class="mb-3">
-		              	<label class="mb-2" for="cstatus">Corona Status <span class="required">*</span></label>
-					    <select id="cstatus" class="form-select" aria-label="Default select example" required>
-					      <option selected disabled>Choose Status</option>
-					      <option value="male">Positive (+ve)</option>
-					      <option value="female">Negative (-ve)</option>
-					    </select>
-		            </div>
-		          </div>
-		          	<div class="col-sm-8 col-12 hidden_box">
-		          		<div class="row">
-				          <div class="col-sm-6 col-6">
-				            <div class="mb-3">
-				              	<label class="mb-2" for="cstart">Corona Start Date</label>
-			              		<input type="date" class="form-control" id="cstart">
-				            </div>
-				          </div>
-				          <div class="col-sm-6 col-6">
-				            <div class="mb-3">
-				              	<label class="mb-2" for="cend">Corona End Date</label>
-							    <input type="date" class="form-control" id="cend">
-				            </div>
-				          </div>
-				        </div>  
-			        </div>  
-	  			</div>
-  			   </div>
-	          <div class="mb-3 pt-3 text-center">
-	            <button type="button" class="btn rounded-pill ai_button">Submit</button>
-	          </div>
-	        </form>
-	      </div> 
-	  </div>
-	</div>	
-
-
+	<div id="form">
+		<div class="container-fluid">
+			<div class="card">
+				<h4 class="text-center my-4">Individual Stuff Information</h4>
+				<div class="text-center"><p>field with an asterisk (<span class="required">*</span>) is must be filled</p></div>
+				<form action="#">
+					<div class="input_section mb-3">
+						<div class="section_heading mb-4">
+							<hr>
+							<strong class="">General Informations :</strong>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="id">Id Number <span class="required">*</span></label>
+									<input type="text" class="form-control" id="id" placeholder="e.g. 001" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="mb-3">
+									<label class="mb-2" for="fname">First Name <span class="required">*</span></label>
+									<input type="text" class="form-control" id="fname" placeholder="e.g. Istiak" required>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="mb-3">
+									<label class="mb-2" for="mname">Middle Name</label>
+									<input type="text" class="form-control" id="mname" placeholder="e.g. Hossain">
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="mb-3">
+									<label class="mb-2" for="lname">Last Name <span class="required">*</span></label>
+									<input type="text" class="form-control" id="lname" placeholder="e.g. Saimon" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="fr_name">Father's Name <span class="required">*</span></label>
+									<input type="text" class="form-control" id="fr_name" placeholder="e.g. Ameer Hossain" required>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="mr_name">Mother's Name <span class="required">*</span></label>
+									<input type="text" class="form-control" id="mr_name" placeholder="e.g. Nur Banu" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<strong class="mb-2" style="text-decoration: underline;">Present Address</strong>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="house_nm">House No.</label>
+									<input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
+									<input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="district">District <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="district" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose district</option>
+											<option value="Chattogram">Chattogram</option>
+											<option value="Dhaka">Dhaka</option>
+											<option value="Chandpur">Chandpur</option>
+											<option value="Kumilla">Kumilla</option>
+											<option value="Barisal">Barisal</option>
+											<option value="Bogra">Bogra</option>
+											<option value="Faridpur">Faridpur</option>
+											<option value="Noakhali">Noakhali</option>
+											<option value="Pabna">Pabna</option>
+											<option value="Dinajpur">Dinajpur</option>
+											<option value="Sylhet">Sylhet</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="upazilla" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose upazilla/division</option>
+											<option value="Anowara">Anowara</option>
+											<option value="Banshkhali">Banshkhali</option>
+											<option value="Lohagara">Lohagara</option>
+											<option value="Chandanaish">Chandanaish</option>
+											<option value="Hathazari">Hathazari</option>
+											<option value="Mirsharai">Mirsharai</option>
+											<option value="Raozan">Raozan</option>
+											<option value="Patiya">Patiya</option>
+											<option value="Rangunia">Rangunia</option>
+											<option value="Fatikchhari">Fatikchhari</option>
+											<option value="Boalkhali">Boalkhali</option>
+											<option value="Satkaniya">Satkaniya</option>
+											<option value="Sitakunda">Sitakunda</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="p_station" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose Police Station</option>
+											<option value="Anowara">Anowara</option>
+											<option value="Banshkhali">Banshkhali</option>
+											<option value="Lohagara">Lohagara</option>
+											<option value="Chandanaish">Chandanaish</option>
+											<option value="Hathazari">Hathazari</option>
+											<option value="Mirsharai">Mirsharai</option>
+											<option value="Raozan">Raozan</option>
+											<option value="Patiya">Patiya</option>
+											<option value="Rangunia">Rangunia</option>
+											<option value="Fatikchhari">Fatikchhari</option>
+											<option value="Boalkhali">Boalkhali</option>
+											<option value="Satkaniya">Satkaniya</option>
+											<option value="Sitakunda">Sitakunda</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
+									<input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_code">Post Code</label>
+									<input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
+								</div>
+							</div>
+						</div>
+						
+						<div class="row mb-4">
+							<strong class="mb-2" style="text-decoration: underline;">Permanent Address</strong>
+							<div class="col-12 my-3">
+								<div class="form-check form-switch">
+									<input class="form-check-input" type="checkbox" id="common_add">
+									<label class="form-check-label px-2" for="common_add">Same as present addreses</label>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="house_nm">House No.</label>
+									<input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
+									<input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="district">District <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="district" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose district</option>
+											<option value="Chattogram">Chattogram</option>
+											<option value="Dhaka">Dhaka</option>
+											<option value="Chandpur">Chandpur</option>
+											<option value="Kumilla">Kumilla</option>
+											<option value="Barisal">Barisal</option>
+											<option value="Bogra">Bogra</option>
+											<option value="Faridpur">Faridpur</option>
+											<option value="Noakhali">Noakhali</option>
+											<option value="Pabna">Pabna</option>
+											<option value="Dinajpur">Dinajpur</option>
+											<option value="Sylhet">Sylhet</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="upazilla" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose upazilla/division</option>
+											<option value="Anowara">Anowara</option>
+											<option value="Banshkhali">Banshkhali</option>
+											<option value="Lohagara">Lohagara</option>
+											<option value="Chandanaish">Chandanaish</option>
+											<option value="Hathazari">Hathazari</option>
+											<option value="Mirsharai">Mirsharai</option>
+											<option value="Raozan">Raozan</option>
+											<option value="Patiya">Patiya</option>
+											<option value="Rangunia">Rangunia</option>
+											<option value="Fatikchhari">Fatikchhari</option>
+											<option value="Boalkhali">Boalkhali</option>
+											<option value="Satkaniya">Satkaniya</option>
+											<option value="Sitakunda">Sitakunda</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="p_station" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose Police Station</option>
+											<option value="Anowara">Anowara</option>
+											<option value="Banshkhali">Banshkhali</option>
+											<option value="Lohagara">Lohagara</option>
+											<option value="Chandanaish">Chandanaish</option>
+											<option value="Hathazari">Hathazari</option>
+											<option value="Mirsharai">Mirsharai</option>
+											<option value="Raozan">Raozan</option>
+											<option value="Patiya">Patiya</option>
+											<option value="Rangunia">Rangunia</option>
+											<option value="Fatikchhari">Fatikchhari</option>
+											<option value="Boalkhali">Boalkhali</option>
+											<option value="Satkaniya">Satkaniya</option>
+											<option value="Sitakunda">Sitakunda</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
+									<input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
+								</div>
+							</div>
+							<div class="col-sm-3 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="p_code">Post Code</label>
+									<input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="phone">Phone <span class="required">*</span></label>
+									<input type="number" class="form-control" id="phone" placeholder="e.g. 01889922334" required>
+								</div>
+							</div>
+							<div class="col-sm-6 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="alt_phone">Alternate Phone</label>
+									<input type="number" class="form-control" id="alt_phone" placeholder="e.g. 01889922335">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="mail">Email</label>
+									<input type="email" class="form-control" id="mail" placeholder="e.g. automateinfosys@gmail.com">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="nid">NID <span class="required">*</span></label>
+									<input type="number" class="form-control" id="nid" placeholder="e.g. 101110222211525" required>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="tin">TIN Number</label>
+									<input type="number" class="form-control" id="tin" placeholder="e.g. 101110222211525">
+								</div>
+							</div>
+							<div class="col-sm-6 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="image">Image <span class="required">*</span></label>
+									<input type="file" class="form-control" id="image" required>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="gender">Gender <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="gender" class="form-select" required>
+											<option selected disabled>Choose gender</option>
+											<option value="married">Male</option>
+											<option value="unmarried">Female</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="mstatus">Marital Status <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="mstatus" class="form-select" required="">
+											<option selected disabled>Choose marital status</option>
+											<option value="married">Married</option>
+											<option value="unmarried">Unmarried</option>
+											<option value="unmarried">Divorced</option>
+											<option value="unmarried">Widowed</option>
+											<option value="unmarried">Others</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="religion">Religion</label>
+									<div class="input-group mb-3">
+										<select id="religion" class="form-select" aria-label="Default select example">
+											<option selected disabled>Choose religion</option>
+											<option value="Islam">Islam</option>
+											<option value="Hinduism">Hinduism</option>
+											<option value="Christianity">Christianity</option>
+											<option value="Buddhism">Buddhism</option>
+											<option value="Others">Others</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="blood_gr">Blood Group <span class="required">*</span></label>
+									<div class="input-group mb-3">
+										<select id="blood_gr" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose blood group</option>
+											<option value="o+">O (+ve)</option>
+											<option value="o-">O (-ve)</option>
+											<option value="a+">A (+ve)</option>
+											<option value="a-">A (-ve)</option>
+											<option value="b+">B (+ve)</option>
+											<option value="b-">B (-ve)</option>
+											<option value="ab+">AB (+ve)</option>
+											<option value="ab-">AB (-ve)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="nationality">Nationality <span class="required">*</span></label>
+									<div class="input-group mb-3">
+										<select id="nationality" class="form-select" aria-label="Default select example" required>
+											<option value="Bangladeshi" selected>Bangladeshi</option>
+											<option value="Indian">Indian</option>
+											<option value="American">American</option>
+											<option value="British">British</option>
+											<option value="Others">Others</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="mb-3">
+									<div class="form-check form-switch my-3">
+										<input class="form-check-input" type="checkbox" value="" id="quota">
+										<label class="form-check-label px-2" for="quota">Child/Grandchild of Freedom Fighter</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="input_section mb-3">
+						<div class="section_heading mb-4">
+							<hr>
+							<strong class="">Job Related :</strong>
+						</div>
+						<div class="row">
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="designation">Designation <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="designation" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose designation</option>
+											<option value="male">M.D (Managing Director)</option>
+											<option value="female">C.E.O (Chief Executive Officer)</option>
+											<option value="female">Manager</option>
+											<option value="female">Assistant Manager</option>
+											<option value="female">Worker</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="dptmnt">Department <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="dptmnt" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose department</option>
+											<option value="agr">Agriculture</option>
+											<option value="arch">Architechture & Construction</option>
+											<option value="it">Information Technology</option>
+											<option value="health">Health Science</option>
+											<option value="bsns">Business & Finance</option>
+											<option value="edu">Education & Training</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="post">Post <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="post" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose post</option>
+											<option value="male">M.D (Managing Director)</option>
+											<option value="female">C.E.O (Chief Executive Officer)</option>
+											<option value="female">Manager</option>
+											<option value="female">Assistant Manager</option>
+											<option value="female">Worker</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="rcrt_date">Recruitement Date <span class="required">*</span></label>
+									<input type="date" class="form-control" id="rcrt_date" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="grade">Grade <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="grade" class="form-select" aria-label="Default select example" required>
+											<option selected disabled>Choose grade</option>
+											<option value="grade1">Grade 1</option>
+											<option value="grade2">Grade 2</option>
+											<option value="grade3">Grade 3</option>
+											<option value="grade4">Grade 4</option>
+											<option value="grade5">Grade 5</option>
+											<option value="grade6">Grade 6</option>
+											<option value="grade7">Grade 7</option>
+											<option value="grade8">Grade 8</option>
+											<option value="grade9">Grade 9</option>
+											<option value="grade10">Grade 10</option>
+											<option value="grade11">Grade 11</option>
+											<option value="grade12">Grade 12</option>
+											<option value="grade13">Grade 13</option>
+											<option value="grade14">Grade 14</option>
+											<option value="grade15">Grade 15</option>
+											<option value="grade16">Grade 16</option>
+											<option value="grade17">Grade 17</option>
+											<option value="grade18">Grade 18</option>
+											<option value="grade19">Grade 19</option>
+											<option value="grade20">Grade 20</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="pay_scale">Pay Scale <span class="required">*</span></label>
+									<div class="input-group">
+										<select id="pay_scale" class="form-select key num1" required>
+											<option value="" selected disabled>Choose pay scale</option>
+											<option value="78000">78,000</option>
+											<option value="66000">66,000</option>
+											<option value="56000">56,000</option>
+											<option value="50000">50,000</option>
+											<option value="43000">43,000</option>
+											<option value="35000">35,000</option>
+											<option value="29000">29,000</option>
+											<option value="23000">23,000</option>
+											<option value="22000">22,000</option>
+											<option value="16000">16,000</option>
+											<option value="12000">12,000</option>
+											<option value="11300">11,300</option>
+											<option value="11000">11,000</option>
+											<option value="10200">10,200</option>
+											<option value="9700">9,700</option>
+											<option value="9300">9,300</option>
+											<option value="9000">9,000</option>
+											<option value="8800">8,800</option>
+											<option value="8500">8,500</option>
+											<option value="8250">8,250</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="hs_rent">House Rent <span class="required">*</span></label>
+									<input type="number" class="form-control key num2" id="hs_rent" placeholder="e.g. 7800" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="taDa">TA/DA <span class="required">*</span></label>
+									<input type="number" class="form-control key num3" placeholder="e.g. 4500" id="taDa" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="gratuity">Gratuity <span class="required">*</span></label>
+									<input type="number" class="form-control key num4" placeholder="e.g. 1200" id="gratuity" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="bonus">Bonus <span class="required">*</span></label>
+									<input type="number" class="form-control key num5" placeholder="e.g. 1500" id="bonus" required>
+								</div>
+							</div>
+							<div class="col-lg-3 col-sm-4">
+								<div class="mb-3">
+									<label class="mb-2" for="total">Total</label>
+									<input type="number" class="form-control" id="total" value="12300" readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="mb-3">
+									<label class="mb-2" for="project">Project <span class="required">*</span></label>
+									<textarea class="form-control" rows="4" placeholder="e.g. Employee portal management" id="project" required></textarea>
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="row">
+									<div class="col-sm-12 col-6">
+										<div class="mb-3">
+											<label class="mb-2" for="attndn">Attendance <span class="required">*</span></label>
+											<input type="number" class="form-control" placeholder="e.g. 256" id="attndn" required>
+										</div>
+									</div>
+									<div class="col-sm-12 col-6">
+										<div class="mb-3">
+											<label class="mb-2" for="leave">Leave <span class="required">*</span></label>
+											<input type="number" class="form-control" placeholder="e.g. 86" id="leave" required>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="inc_date">Incremental Date <span class="required">*</span></label>
+									<input type="date" class="form-control" id="inc_date" required>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="prfrmnc">Performance <span class="required">*</span></label>
+									<input type="text" class="form-control" placeholder="e.g. " id="prfrmnc" required>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="eval">Evaluation <span class="required">*</span></label>
+									<input type="text" class="form-control" placeholder="e.g. " id="eval" required>
+								</div>
+							</div>
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="promo">Promotion <span class="required">*</span></label>
+									<input type="text" class="form-control" placeholder="e.g. " id="promo" required>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input_section mb-3">
+						<div class="section_heading mb-4">
+							<hr>
+							<strong class="">Talent Profile :</strong>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<div class="mb-3">
+									<label class="mb-2" for="training">Training</label>
+									<textarea id="training" class="form-control" rows="4" placeholder="e.g. 1 year of Professional training in Responsive Web Design and Front-end Development"></textarea>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="mb-3">
+									<div class="form-group">
+										<label class="mb-2" for="skill">Skills</label>
+										<select id="skill" class="choices form-select multiple-remove" multiple="multiple">
+											<option value="html">HTML5</option>
+											<option value="css">CSS3</option>
+											<option value="jqery">JQuery</option>
+											<option value="bootstrap">Bootstrap</option>
+											<option value="php">PHP</option>
+											<option value="mysql">MySQL</option>
+											<option value="wordpress">Wordpress</option>
+											<option value="photoshop">Photoshop</option>
+											<option value="illustrator">Illustrator</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 col-12">
+								<div class="mb-3">
+									<label class="mb-2" for="crfct">Certificate</label>
+									<input type="text" class="form-control" placeholder="e.g. Responsive Web Design and Front-end Development"  id="crfct">
+								</div>
+							</div>
+							<div class="col-md-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="degree">Degree</label>
+									<div class="input-group">
+										<select id="degree" class="form-select">
+											<option selected disabled>Select degree</option>
+											<option value="">B.Sc</option>
+											<option value="56000">B.A</option>
+											<option value="50000">M.Sc</option>
+											<option value="43000">M.B.A</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input_section mb-3">
+						<div class="section_heading mb-4">
+							<hr>
+							<strong class="">Health Informations :</strong>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-6">
+								<div class="mb-3">
+									<label class="mb-2" for="cstatus">Corona Status <span class="required">*</span></label>
+									<select id="cstatus" class="form-select" aria-label="Default select example" required>
+										<option selected disabled>Choose Status</option>
+										<option value="male">Positive (+ve)</option>
+										<option value="female">Negative (-ve)</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-sm-8 col-12 hidden_box">
+								<div class="row">
+									<div class="col-sm-6 col-6">
+										<div class="mb-3">
+											<label class="mb-2" for="cstart">Corona Start Date</label>
+											<input type="date" class="form-control" id="cstart">
+										</div>
+									</div>
+									<div class="col-sm-6 col-6">
+										<div class="mb-3">
+											<label class="mb-2" for="cend">Corona End Date</label>
+											<input type="date" class="form-control" id="cend">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mb-3 pt-3 text-center">
+						<button type="button" class="btn rounded-pill ai_button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<!-- all js here -->
 	<!-- jquery latest version -->
-	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery.min.js"></script>
 	<!-- bootstrap js -->
 	<script src="js/bootstrap.bundle.min.js"></script>
-
+	<!-- choices js -->
 	<script src="js/choices.min.js"></script>
-
-	<script>
-		$(document).ready(function() {
-		    $("#total").val("0");
-		    $(".key").val("");
-
-		    function calc() {
-		        var $num1 = ($.trim($(".num1").val()) != "" && !isNaN($(".num1").val())) ? parseInt($(".num1").val()) : 0;
-		        var $num2 = ($.trim($(".num2").val()) != "" && !isNaN($(".num2").val())) ? parseInt($(".num2").val()) : 0;
-		        var $num3 = ($.trim($(".num3").val()) != "" && !isNaN($(".num3").val())) ? parseInt($(".num3").val()) : 0;
-		        var $num4 = ($.trim($(".num4").val()) != "" && !isNaN($(".num4").val())) ? parseInt($(".num4").val()) : 0;
-		        var $num5 = ($.trim($(".num5").val()) != "" && !isNaN($(".num5").val())) ? parseInt($(".num5").val()) : 0;
-		        $("#total").val($num1 + $num2 + $num3 + $num4 + $num5);
-		    }
-		    $(".key").on(('keyup click'), function() {
-		        calc();
-		    });
-		});
-	</script>
+	<!-- custom js -->
+	<script src="js/main.js"></script>
 
 </body>
 </html>

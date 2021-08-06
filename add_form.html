@@ -15,6 +15,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div id="scroll_to_top">
+        <a href="#form"><i class="fas fa-arrow-up"></i></a>
+    </div>
+
+    <div id="aside_box">
+        <div class="aside_box_content">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add_form.html">Add data to Database</a></li>
+            </ol>
+        </div>
+    </div>
+
+
+    
     <div id="form">
         <div class="container-fluid">
             <div class="card">
@@ -223,17 +239,8 @@
     <script src="js/jquery.min.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src="js/main.js"></script>
 
-    <script>
-        $(document).ready(function() {
-
-            $('#add_opt').on('change', function() {
-                var val = $(this).val();
-
-                $("#option_group, #single_form").children().slideUp('400');
-                $("#option_group, #single_form").children(".".concat(val)).slideDown('400');
-            });
-        });
-    </script>
 </body>
 </html>
