@@ -46,7 +46,7 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="id">Id Number <span class="required">*</span></label>
-									<input type="text" class="form-control" id="id" placeholder="e.g. 001" required>
+									<input type="text" class="form-control" name="id" id="id" placeholder="e.g. 001" required>
 								</div>
 							</div>
 						</div>
@@ -54,19 +54,19 @@
 							<div class="col-sm-4">
 								<div class="mb-3">
 									<label class="mb-2" for="fname">First Name <span class="required">*</span></label>
-									<input type="text" class="form-control" id="fname" placeholder="e.g. Istiak" required>
+									<input type="text" class="form-control" name="fname" id="fname" placeholder="e.g. Istiak" required>
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="mb-3">
 									<label class="mb-2" for="mname">Middle Name</label>
-									<input type="text" class="form-control" id="mname" placeholder="e.g. Hossain">
+									<input type="text" class="form-control" name="mname" id="mname" placeholder="e.g. Hossain">
 								</div>
 							</div>
 							<div class="col-sm-4">
 								<div class="mb-3">
 									<label class="mb-2" for="lname">Last Name <span class="required">*</span></label>
-									<input type="text" class="form-control" id="lname" placeholder="e.g. Saimon" required>
+									<input type="text" class="form-control" name="lname" id="lname" placeholder="e.g. Saimon" required>
 								</div>
 							</div>
 						</div>
@@ -74,13 +74,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="fr_name">Father's Name <span class="required">*</span></label>
-									<input type="text" class="form-control" id="fr_name" placeholder="e.g. Ameer Hossain" required>
+									<input type="text" class="form-control" name="fr_name" id="fr_name" placeholder="e.g. Ameer Hossain" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="mr_name">Mother's Name <span class="required">*</span></label>
-									<input type="text" class="form-control" id="mr_name" placeholder="e.g. Nur Banu" required>
+									<input type="text" class="form-control" name="mr_name" id="mr_name" placeholder="e.g. Nur Banu" required>
 								</div>
 							</div>
 						</div>
@@ -89,20 +89,20 @@
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="house_nm">House No.</label>
-									<input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
+									<input type="text" class="form-control" name="house_nm" id="house_nm" placeholder="e.g. 112/B">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
-									<input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
+									<input type="text" class="form-control" name="road" id="road" placeholder="e.g. Omar Ali Matobbor Road">
 								</div>
 							</div>
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="district">District <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="district" class="form-select" aria-label="Default select example" required>
+										<select name="district" id="district" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose district</option>
 											<option value="Chattogram">Chattogram</option>
 											<option value="Dhaka">Dhaka</option>
@@ -123,7 +123,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="upazilla" class="form-select" aria-label="Default select example" required>
+										<select name="upazilla" id="upazilla" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose upazilla/division</option>
 											<option value="Anowara">Anowara</option>
 											<option value="Banshkhali">Banshkhali</option>
@@ -146,7 +146,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="p_station" class="form-select" aria-label="Default select example" required>
+										<select name="p_station" id="p_station" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose Police Station</option>
 											<option value="Anowara">Anowara</option>
 											<option value="Banshkhali">Banshkhali</option>
@@ -168,13 +168,13 @@
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
-									<input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
+									<input type="text" class="form-control" name="p_office" id="p_office" placeholder="e.g. Chawkbazar" required>
 								</div>
 							</div>
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="p_code">Post Code</label>
-									<input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
+									<input type="text" class="form-control" name="p_code" id="p_code" placeholder="e.g. 4203">
 								</div>
 							</div>
 						</div>
@@ -183,27 +183,27 @@
 							<strong class="mb-2" style="text-decoration: underline;">Permanent Address</strong>
 							<div class="col-12 my-3">
 								<div class="form-check form-switch">
-									<input class="form-check-input" type="checkbox" id="common_add">
+									<input class="form-check-input" type="checkbox" name="common_add" id="common_add">
 									<label class="form-check-label px-2" for="common_add">Same as present addreses</label>
 								</div>
 							</div>
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="house_nm">House No.</label>
-									<input type="text" class="form-control" id="house_nm" placeholder="e.g. 112/B">
+									<input type="text" class="form-control" name="house_nm" id="house_nm" placeholder="e.g. 112/B">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="road">Road/Block <span class="required">*</span></label>
-									<input type="text" class="form-control" id="road" placeholder="e.g. Omar Ali Matobbor Road">
+									<input type="text" class="form-control" name="road" id="road" placeholder="e.g. Omar Ali Matobbor Road">
 								</div>
 							</div>
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="district">District <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="district" class="form-select" aria-label="Default select example" required>
+										<select name="district" id="district" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose district</option>
 											<option value="Chattogram">Chattogram</option>
 											<option value="Dhaka">Dhaka</option>
@@ -224,7 +224,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="upazilla">Upazilla/Division <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="upazilla" class="form-select" aria-label="Default select example" required>
+										<select name="upazilla" id="upazilla" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose upazilla/division</option>
 											<option value="Anowara">Anowara</option>
 											<option value="Banshkhali">Banshkhali</option>
@@ -247,7 +247,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="p_station">Police Station <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="p_station" class="form-select" aria-label="Default select example" required>
+										<select name="p_station" id="p_station" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose Police Station</option>
 											<option value="Anowara">Anowara</option>
 											<option value="Banshkhali">Banshkhali</option>
@@ -269,13 +269,13 @@
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="p_office">Post Office <span class="required">*</span></label>
-									<input type="text" class="form-control" id="p_office" placeholder="e.g. Chawkbazar" required>
+									<input type="text" class="form-control" name="p_office" id="p_office" placeholder="e.g. Chawkbazar" required>
 								</div>
 							</div>
 							<div class="col-sm-3 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="p_code">Post Code</label>
-									<input type="text" class="form-control" id="p_code" placeholder="e.g. 4203">
+									<input type="text" class="form-control" name="p_code" id="p_code" placeholder="e.g. 4203">
 								</div>
 							</div>
 						</div>
@@ -283,13 +283,13 @@
 							<div class="col-sm-6 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="phone">Phone <span class="required">*</span></label>
-									<input type="number" class="form-control" id="phone" placeholder="e.g. 01889922334" required>
+									<input type="number" class="form-control" name="phone" id="phone" placeholder="e.g. 01889922334" required>
 								</div>
 							</div>
 							<div class="col-sm-6 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="alt_phone">Alternate Phone</label>
-									<input type="number" class="form-control" id="alt_phone" placeholder="e.g. 01889922335">
+									<input type="number" class="form-control" name="alt_phone" id="alt_phone" placeholder="e.g. 01889922335">
 								</div>
 							</div>
 						</div>
@@ -297,13 +297,13 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="mail">Email</label>
-									<input type="email" class="form-control" id="mail" placeholder="e.g. automateinfosys@gmail.com">
+									<input type="email" class="form-control" name="mail" id="mail" placeholder="e.g. automateinfosys@gmail.com">
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="nid">NID <span class="required">*</span></label>
-									<input type="number" class="form-control" id="nid" placeholder="e.g. 101110222211525" required>
+									<input type="number" class="form-control" name="nid" id="nid" placeholder="e.g. 101110222211525" required>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -315,14 +315,14 @@
 							<div class="col-sm-6 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="image">Image <span class="required">*</span></label>
-									<input type="file" class="form-control" id="image" required>
+									<input type="file" class="form-control" name="image" id="image" required>
 								</div>
 							</div>
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="gender">Gender <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="gender" class="form-select" required>
+										<select name="gender" id="gender" class="form-select" required>
 											<option selected disabled>Choose gender</option>
 											<option value="married">Male</option>
 											<option value="unmarried">Female</option>
@@ -334,7 +334,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="mstatus">Marital Status <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="mstatus" class="form-select" required="">
+										<select name="mstatus" id="mstatus" class="form-select" required="">
 											<option selected disabled>Choose marital status</option>
 											<option value="married">Married</option>
 											<option value="unmarried">Unmarried</option>
@@ -349,7 +349,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="religion">Religion</label>
 									<div class="input-group mb-3">
-										<select id="religion" class="form-select" aria-label="Default select example">
+										<select name="religion" id="religion" class="form-select" aria-label="Default select example">
 											<option selected disabled>Choose religion</option>
 											<option value="Islam">Islam</option>
 											<option value="Hinduism">Hinduism</option>
@@ -364,7 +364,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="blood_gr">Blood Group <span class="required">*</span></label>
 									<div class="input-group mb-3">
-										<select id="blood_gr" class="form-select" aria-label="Default select example" required>
+										<select name="blood_gr" id="blood_gr" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose blood group</option>
 											<option value="o+">O (+ve)</option>
 											<option value="o-">O (-ve)</option>
@@ -382,7 +382,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="nationality">Nationality <span class="required">*</span></label>
 									<div class="input-group mb-3">
-										<select id="nationality" class="form-select" aria-label="Default select example" required>
+										<select name="nationality" id="nationality" class="form-select" aria-label="Default select example" required>
 											<option value="Bangladeshi" selected>Bangladeshi</option>
 											<option value="Indian">Indian</option>
 											<option value="American">American</option>
@@ -395,7 +395,7 @@
 							<div class="col-12">
 								<div class="mb-3">
 									<div class="form-check form-switch my-3">
-										<input class="form-check-input" type="checkbox" value="" id="quota">
+										<input class="form-check-input" type="checkbox" value="" name="quota" id="quota">
 										<label class="form-check-label px-2" for="quota">Child/Grandchild of Freedom Fighter</label>
 									</div>
 								</div>
@@ -413,7 +413,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="designation">Designation <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="designation" class="form-select" aria-label="Default select example" required>
+										<select name="designation" id="designation" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose designation</option>
 											<option value="male">M.D (Managing Director)</option>
 											<option value="female">C.E.O (Chief Executive Officer)</option>
@@ -428,7 +428,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="dptmnt">Department <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="dptmnt" class="form-select" aria-label="Default select example" required>
+										<select name="dptmnt" id="dptmnt" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose department</option>
 											<option value="agr">Agriculture</option>
 											<option value="arch">Architechture & Construction</option>
@@ -444,7 +444,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="post">Post <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="post" class="form-select" aria-label="Default select example" required>
+										<select name="post" id="post" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose post</option>
 											<option value="male">M.D (Managing Director)</option>
 											<option value="female">C.E.O (Chief Executive Officer)</option>
@@ -458,14 +458,14 @@
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="rcrt_date">Recruitement Date <span class="required">*</span></label>
-									<input type="date" class="form-control" id="rcrt_date" required>
+									<input type="date" class="form-control" name="rcrt_date" id="rcrt_date" required>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="grade">Grade <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="grade" class="form-select" aria-label="Default select example" required>
+										<select name="grade" id="grade" class="form-select" aria-label="Default select example" required>
 											<option selected disabled>Choose grade</option>
 											<option value="grade1">Grade 1</option>
 											<option value="grade2">Grade 2</option>
@@ -495,7 +495,7 @@
 								<div class="mb-3">
 									<label class="mb-2" for="pay_scale">Pay Scale <span class="required">*</span></label>
 									<div class="input-group">
-										<select id="pay_scale" class="form-select key num1" required>
+										<select name="pay_scale" id="pay_scale" class="form-select key num1" required>
 											<option value="" selected disabled>Choose pay scale</option>
 											<option value="78000">78,000</option>
 											<option value="66000">66,000</option>
@@ -524,31 +524,31 @@
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="hs_rent">House Rent <span class="required">*</span></label>
-									<input type="number" class="form-control key num2" id="hs_rent" placeholder="e.g. 7800" required>
+									<input type="number" class="form-control key num2" name="hs_rent" id="hs_rent" placeholder="e.g. 7800" required>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="taDa">TA/DA <span class="required">*</span></label>
-									<input type="number" class="form-control key num3" placeholder="e.g. 4500" id="taDa" required>
+									<input type="number" class="form-control key num3" placeholder="e.g. 4500" name="taDa" id="taDa" required>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="gratuity">Gratuity <span class="required">*</span></label>
-									<input type="number" class="form-control key num4" placeholder="e.g. 1200" id="gratuity" required>
+									<input type="number" class="form-control key num4" placeholder="e.g. 1200" name="gratuity" id="gratuity" required>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="bonus">Bonus <span class="required">*</span></label>
-									<input type="number" class="form-control key num5" placeholder="e.g. 1500" id="bonus" required>
+									<input type="number" class="form-control key num5" placeholder="e.g. 1500" name="bonus" id="bonus" required>
 								</div>
 							</div>
 							<div class="col-lg-3 col-sm-4">
 								<div class="mb-3">
 									<label class="mb-2" for="total">Total</label>
-									<input type="number" class="form-control" id="total" value="12300" readonly>
+									<input type="number" class="form-control" name="total" id="total" readonly>
 								</div>
 							</div>
 						</div>
@@ -556,7 +556,7 @@
 							<div class="col-sm-6">
 								<div class="mb-3">
 									<label class="mb-2" for="project">Project <span class="required">*</span></label>
-									<textarea class="form-control" rows="4" placeholder="e.g. Employee portal management" id="project" required></textarea>
+									<textarea class="form-control" rows="4" placeholder="e.g. Employee portal management" name="project" id="project" required></textarea>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -564,13 +564,13 @@
 									<div class="col-sm-12 col-6">
 										<div class="mb-3">
 											<label class="mb-2" for="attndn">Attendance <span class="required">*</span></label>
-											<input type="number" class="form-control" placeholder="e.g. 256" id="attndn" required>
+											<input type="number" class="form-control" placeholder="e.g. 256" name="attndn" id="attndn" required>
 										</div>
 									</div>
 									<div class="col-sm-12 col-6">
 										<div class="mb-3">
 											<label class="mb-2" for="leave">Leave <span class="required">*</span></label>
-											<input type="number" class="form-control" placeholder="e.g. 86" id="leave" required>
+											<input type="number" class="form-control" placeholder="e.g. 86" name="leave" id="leave" required>
 										</div>
 									</div>
 								</div>
@@ -578,25 +578,25 @@
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="inc_date">Incremental Date <span class="required">*</span></label>
-									<input type="date" class="form-control" id="inc_date" required>
+									<input type="date" class="form-control" name="inc_date" id="inc_date" required>
 								</div>
 							</div>
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="prfrmnc">Performance <span class="required">*</span></label>
-									<input type="text" class="form-control" placeholder="e.g. " id="prfrmnc" required>
+									<input type="text" class="form-control" placeholder="e.g. " name="prfrmnc" id="prfrmnc" required>
 								</div>
 							</div>
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="eval">Evaluation <span class="required">*</span></label>
-									<input type="text" class="form-control" placeholder="e.g. " id="eval" required>
+									<input type="text" class="form-control" placeholder="e.g. " name="eval" id="eval" required>
 								</div>
 							</div>
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="promo">Promotion <span class="required">*</span></label>
-									<input type="text" class="form-control" placeholder="e.g. " id="promo" required>
+									<input type="text" class="form-control" placeholder="e.g. " name="promo" id="promo" required>
 								</div>
 							</div>
 						</div>
@@ -610,14 +610,14 @@
 							<div class="col-12">
 								<div class="mb-3">
 									<label class="mb-2" for="training">Training</label>
-									<textarea id="training" class="form-control" rows="4" placeholder="e.g. 1 year of Professional training in Responsive Web Design and Front-end Development"></textarea>
+									<textarea name="training" id="training" class="form-control" rows="4" placeholder="e.g. 1 year of Professional training in Responsive Web Design and Front-end Development"></textarea>
 								</div>
 							</div>
 							<div class="col-12">
 								<div class="mb-3">
 									<div class="form-group">
 										<label class="mb-2" for="skill">Skills</label>
-										<select id="skill" class="choices form-select multiple-remove" multiple="multiple">
+										<select name="skill" id="skill" class="choices form-select multiple-remove" multiple="multiple">
 											<option value="html">HTML5</option>
 											<option value="css">CSS3</option>
 											<option value="jqery">JQuery</option>
@@ -634,14 +634,14 @@
 							<div class="col-md-8 col-12">
 								<div class="mb-3">
 									<label class="mb-2" for="crfct">Certificate</label>
-									<input type="text" class="form-control" placeholder="e.g. Responsive Web Design and Front-end Development"  id="crfct">
+									<input type="text" class="form-control" placeholder="e.g. Responsive Web Design and Front-end Development" name="crfct" id="crfct">
 								</div>
 							</div>
 							<div class="col-md-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="degree">Degree</label>
 									<div class="input-group">
-										<select id="degree" class="form-select">
+										<select name="degree" id="degree" class="form-select">
 											<option selected disabled>Select degree</option>
 											<option value="">B.Sc</option>
 											<option value="56000">B.A</option>
@@ -662,7 +662,7 @@
 							<div class="col-sm-4 col-6">
 								<div class="mb-3">
 									<label class="mb-2" for="cstatus">Corona Status <span class="required">*</span></label>
-									<select id="cstatus" class="form-select" aria-label="Default select example" required>
+									<select name="cstatus" id="cstatus" class="form-select" aria-label="Default select example" required>
 										<option selected disabled>Choose Status</option>
 										<option value="male">Positive (+ve)</option>
 										<option value="female">Negative (-ve)</option>
@@ -674,13 +674,13 @@
 									<div class="col-sm-6 col-6">
 										<div class="mb-3">
 											<label class="mb-2" for="cstart">Corona Start Date</label>
-											<input type="date" class="form-control" id="cstart">
+											<input type="date" class="form-control" name="cstart" id="cstart">
 										</div>
 									</div>
 									<div class="col-sm-6 col-6">
 										<div class="mb-3">
 											<label class="mb-2" for="cend">Corona End Date</label>
-											<input type="date" class="form-control" id="cend">
+											<input type="date" class="form-control" name="cend" id="cend">
 										</div>
 									</div>
 								</div>

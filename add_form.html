@@ -41,7 +41,7 @@
                         <div class="mb-3">
                             <label class="mb-2" for="add_opt">Choose what to add</label>
                             <div class="input-group">
-                                <select id="add_opt" class="form-select">
+                                <select name="add_opt" id="add_opt" class="form-select">
                                     <option selected disabled>Select any option</option>
                                     <option value="designation">Designation</option>
                                     <option value="department">Department</option>
@@ -52,14 +52,14 @@
                             </div>
                         </div>
                         <div id="option_group">
-                            <div class="designation">
+                            <div class="designation mb-5">
                                 <div class="section_heading mb-4 mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
                                     <label class="mb-2" for="dsg">Designation</label>
                                     <div class="input-group">
-                                        <select id="dsg" class="form-select" aria-label="Default select example" required>
+                                        <select name="dsg" id="dsg" class="form-select" aria-label="Default select example" required>
                                             <option value="male" selected disabled>M.D (Managing Director)</option>
                                             <option value="female" disabled>C.E.O (Chief Executive Officer)</option>
                                             <option value="female" disabled>Manager</option>
@@ -68,15 +68,16 @@
                                         </select>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
-                            <div class="department">
+                            <div class="department mb-5">
                                 <div class="section_heading mb-4 mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
                                     <label class="mb-2" for="dptmnt">Department</label>
                                     <div class="input-group">
-                                        <select id="dptmnt" class="form-select" aria-label="Default select example" required>
+                                        <select name="dptmnt" id="dptmnt" class="form-select" aria-label="Default select example" required>
                                             <option value="agr" selected disabled>Agriculture</option>
                                             <option value="arch" disabled>Architechture & Construction</option>
                                             <option value="it" disabled>Information Technology</option>
@@ -86,15 +87,16 @@
                                         </select>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
-                            <div class="post">
+                            <div class="post mb-5">
                                 <div class="section_heading mb-4 mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
                                     <label class="mb-2" for="pst">Post</label>
                                     <div class="input-group">
-                                        <select id="pst" class="form-select" aria-label="Default select example" required>
+                                        <select name="pst" id="pst" class="form-select" aria-label="Default select example" required>
                                             <option value="male" selected disabled>M.D (Managing Director)</option>
                                             <option value="female" disabled>C.E.O (Chief Executive Officer)</option>
                                             <option value="female" disabled>Manager</option>
@@ -103,15 +105,16 @@
                                         </select>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
-                            <div class="grade">
+                            <div class="grade mb-5">
                                 <div class="section_heading mb-4 mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
                                     <label class="mb-2" for="grd">Grade</label>
                                     <div class="input-group">
-                                        <select id="grd" class="form-select" required>
+                                        <select name="grd" id="grd" class="form-select" required>
                                             <option value="grade1" selected disabled>Grade 1</option>
                                             <option value="grade2" disabled>Grade 2</option>
                                             <option value="grade3" disabled>Grade 3</option>
@@ -135,38 +138,40 @@
                                         </select>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
-                            <div class="payscale">
+                            <div class="payscale mb-5">
                                 <div class="section_heading mb-4 mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
                                     <label class="mb-2" for="pay_scl">Pay Scale</label>
                                     <div class="input-group">
-                                        <select id="pay_scl" class="form-select" required>
-                                            <option value="78000" selected disabled>78,000</option>
-                                            <option value="66000" disabled>66,000</option>
-                                            <option value="56000" disabled>56,000</option>
-                                            <option value="50000" disabled>50,000</option>
-                                            <option value="43000" disabled>43,000</option>
-                                            <option value="35000" disabled>35,000</option>
-                                            <option value="29000" disabled>29,000</option>
-                                            <option value="23000" disabled>23,000</option>
-                                            <option value="22000" disabled>22,000</option>
-                                            <option value="16000" disabled>16,000</option>
-                                            <option value="12000" disabled>12,000</option>
-                                            <option value="11300" disabled>11,300</option>
-                                            <option value="11000" disabled>11,000</option>
-                                            <option value="10200" disabled>10,200</option>
-                                            <option value="9700" disabled>9,700</option>
-                                            <option value="9300" disabled>9,300</option>
-                                            <option value="9000" disabled>9,000</option>
-                                            <option value="8800" disabled>8,800</option>
-                                            <option value="8500" disabled>8,500</option>
-                                            <option value="8250" disabled>8,250</option>
+                                        <select name="pay_scl" id="pay_scl" class="form-select" required>
+                                            <option value="78000" selected disabled>Grade 1</option>
+                                            <option value="66000" disabled>Grade 2</option>
+                                            <option value="56000" disabled>Grade 3</option>
+                                            <option value="50000" disabled>Grade 4</option>
+                                            <option value="43000" disabled>Grade 5</option>
+                                            <option value="35000" disabled>Grade 6</option>
+                                            <option value="29000" disabled>Grade 7</option>
+                                            <option value="23000" disabled>Grade 8</option>
+                                            <option value="22000" disabled>Grade 9</option>
+                                            <option value="16000" disabled>Grade 10</option>
+                                            <option value="12000" disabled>Grade 11</option>
+                                            <option value="11300" disabled>Grade 12</option>
+                                            <option value="11000" disabled>Grade 13</option>
+                                            <option value="10200" disabled>Grade 14</option>
+                                            <option value="9700" disabled>Grade 15</option>
+                                            <option value="9300" disabled>Grade 16</option>
+                                            <option value="9000" disabled>Grade 17</option>
+                                            <option value="8800" disabled>Grade 18</option>
+                                            <option value="8500" disabled>Grade 19</option>
+                                            <option value="8250" disabled>Grade 20</option>
                                         </select>
                                     </div>
                                 </div>
+                                <hr/>
                             </div>
                         </div>
                     </div>
@@ -177,7 +182,7 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Designation</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Managing Director">
+                                        <input type="text" class="form-control" name="designation" placeholder="e.g. Managing Director">
                                     </div>
                                     <div class="mb-3 pt-3 text-center">
                                         <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
@@ -188,7 +193,7 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Department</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Information Technology">
+                                        <input type="text" class="form-control" name="department" placeholder="e.g. Information Technology">
                                     </div>
                                     <div class="mb-3 pt-3 text-center">
                                         <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
@@ -199,7 +204,7 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Post</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Manager">
+                                        <input type="text" class="form-control" name="post" placeholder="e.g. Manager">
                                     </div>
                                     <div class="mb-3 pt-3 text-center">
                                         <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
@@ -210,7 +215,7 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Grade</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Grade 3">
+                                        <input type="text" class="form-control" name="grade" placeholder="e.g. Grade 3">
                                     </div>
                                     <div class="mb-3 pt-3 text-center">
                                         <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
@@ -221,8 +226,62 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Pay Scale</label>
-                                        <input type="text" class="form-control" placeholder="e.g. 12300">
+                                        <select name="payscale" id="payscale" class="form-select" required>
+                                            <option value="" selected disabled>Select grade</option>
+                                            <option value="grade 1">Grade 1</option>
+                                            <option value="grade 2">Grade 2</option>
+                                            <option value="grade 3">Grade 3</option>
+                                            <option value="grade 4">Grade 4</option>
+                                            <option value="grade 5">Grade 5</option>
+                                            <option value="grade 6">Grade 6</option>
+                                            <option value="grade 7">Grade 7</option>
+                                            <option value="grade 8">Grade 8</option>
+                                            <option value="grade 9">Grade 9</option>
+                                            <option value="grade 10">Grade 10</option>
+                                            <option value="grade 11">Grade 11</option>
+                                            <option value="grade 12">Grade 12</option>
+                                            <option value="grade 13">Grade 13</option>
+                                            <option value="grade 14">Grade 14</option>
+                                            <option value="grade 15">Grade 15</option>
+                                            <option value="grade 16">Grade 16</option>
+                                            <option value="grade 17">Grade 17</option>
+                                            <option value="grade 18">Grade 18</option>
+                                            <option value="grade 19">Grade 19</option>
+                                            <option value="grade 20">Grade 20</option>
+                                        </select>
                                     </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="mb-2" for="hs_rent">House Rent <span class="required">*</span></label>
+                                                <input type="number" class="form-control key num2" name="hs_rent" id="hs_rent" placeholder="e.g. 7800" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="mb-2" for="taDa">TA/DA <span class="required">*</span></label>
+                                                <input type="number" class="form-control key num3" placeholder="e.g. 4500" name="taDa" id="taDa" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="mb-2" for="gratuity">Gratuity <span class="required">*</span></label>
+                                                <input type="number" class="form-control key num4" placeholder="e.g. 1200" name="gratuity" id="gratuity" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label class="mb-2" for="bonus">Bonus <span class="required">*</span></label>
+                                                <input type="number" class="form-control key num5" placeholder="e.g. 1500" name="bonus" id="bonus" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label class="mb-2" for="total">Total</label>
+                                                <input type="number" class="form-control" name="total" id="total" readonly>
+                                            </div>
+                                        </div>
+                                    </div>    
                                     <div class="mb-3 pt-3 text-center">
                                         <button type="button" class="btn rounded-pill ai_button">Add to Database</button>
                                     </div>
