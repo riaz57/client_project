@@ -14,21 +14,21 @@
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body id="background">
+        <!-- scroll-to-top button -->
     <div id="scroll_to_top">
         <a href="#form"><i class="fas fa-arrow-up"></i></a>
     </div>
-
+        <!-- sidebar -->
     <div id="aside_box">
         <div class="aside_box_content">
             <ol>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="add_form.html">Add data to Database</a></li>
+                <li><a href="print_form.html">Print form</a></li>
             </ol>
         </div>
     </div>
-
 
     
     <div id="form">
@@ -90,7 +90,7 @@
                                 <hr/>
                             </div>
                             <div class="post mb-5">
-                                <div class="section_heading mb-4 mt-5">
+                                <div class="section_heading mt-5">
                                     <strong>Result from database :</strong>
                                 </div>
                                 <div class="mb-3">
@@ -226,7 +226,29 @@
                                 <form action="#">
                                     <div class="mb-3">
                                         <label class="mb-2">Add Pay Scale</label>
-                                        <input type="text" class="form-control" placeholder="e.g. Grade 1" name="payscale" id="payscale" required>
+                                        <select name="payscale" id="payscale" class="form-select" required>
+                                            <option value="" selected disabled>Select grade</option>
+                                            <option value="grade 1">Grade 1</option>
+                                            <option value="grade 2">Grade 2</option>
+                                            <option value="grade 3">Grade 3</option>
+                                            <option value="grade 4">Grade 4</option>
+                                            <option value="grade 5">Grade 5</option>
+                                            <option value="grade 6">Grade 6</option>
+                                            <option value="grade 7">Grade 7</option>
+                                            <option value="grade 8">Grade 8</option>
+                                            <option value="grade 9">Grade 9</option>
+                                            <option value="grade 10">Grade 10</option>
+                                            <option value="grade 11">Grade 11</option>
+                                            <option value="grade 12">Grade 12</option>
+                                            <option value="grade 13">Grade 13</option>
+                                            <option value="grade 14">Grade 14</option>
+                                            <option value="grade 15">Grade 15</option>
+                                            <option value="grade 16">Grade 16</option>
+                                            <option value="grade 17">Grade 17</option>
+                                            <option value="grade 18">Grade 18</option>
+                                            <option value="grade 19">Grade 19</option>
+                                            <option value="grade 20">Grade 20</option>
+                                        </select>
                                     </div>
                                     <div class="row">
                                         <div class="col-6">

@@ -3,7 +3,7 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
-body {
+#background {
     background-image: linear-gradient(to right bottom, #a8ff78 13%, #78ffd6 115%);
     min-height: 100vh;
     overflow-y: auto;
@@ -14,6 +14,9 @@ a {
 }
 ul, ol {
     padding-left: 1rem;
+}
+li {
+    list-style: none;
 }
 #form {
     max-width: 1050px;
@@ -88,6 +91,7 @@ ul, ol {
 }
 .aside_box_content li {
     padding: 0.4rem 1rem;
+    list-style: decimal;
 }
 .open {
     left: 0!important;
@@ -141,9 +145,9 @@ label {
     font-size: 1rem;
     color: #fff;
     background: linear-gradient(to right bottom, #00b09b, #96c93d);
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
     padding: 0.2rem 0.6rem;
     border-radius: 50rem;
+    display: inline-block;
 }
 .choices__inner {
     background-color: #fff;
@@ -170,8 +174,272 @@ label {
     display: none;
 }
 
+/*----------------------------------------*/
+/*  form_print CSS
+/*----------------------------------------*/
 
+page {
+    /* background-color: #fff; */
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 0 14px 0 rgba(0,0,0,0.3);
+    position: relative;
+}
+page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+}
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: none;
+  }
+}
+.logo {
+    max-width: 70px;
+}
+#print {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    padding: 1.7rem 1.5rem;
+    /* background: linear-gradient(109deg, rgba(100, 243, 140, 0.4) 32%, rgba(0, 210, 255, 0.4) 123%); */
+    /* background: linear-gradient(106deg, rgba(0, 136, 255, 0.3) -28.62%, rgba(160, 51, 255, 0.2) 36.39%, rgba(255, 92, 135, 0.35) 98.74%); */
+    background: linear-gradient(110deg, rgba(255, 255, 136, 0.5) -22%, rgba(133, 255, 185, 0.4)  67%, rgba(43, 202, 255, 0.4) 107%);
+    margin-right: auto;
+    margin-left: auto;
+}
+#print hr {
+    margin: 0.5rem 0;
+}
+.form_heading {
+    display: flex;
+    align-items: center;
+}
+.cmp_name p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+.img_box {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #333;
+}
+.empl_img {
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+}
 
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0.6rem;
+}
+.field {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.6rem;
+}
+
+/* first_section */
+.grid_container .fld_id {
+    grid-area: 1 / 1 / 2 / 4;
+}
+.grid_container .fld_img {
+    grid-area: 1 / 12 / 5 / 13;
+}
+.grid_container .fld_full_name {
+    grid-area: 2 / 1 / 3 / 8;
+}
+.grid_container .fld_gender {
+    grid-area: 2 / 8 / 3 / 12;
+}
+.grid_container .fld_ftr_name {
+    grid-area: 3 / 1 / 4 / 8;
+}
+.grid_container .fld_blood_gr {
+    grid-area: 3 / 8 / 4 / 12;
+}
+.grid_container .fld_mtr_name {
+    grid-area: 4 / 1 / 5 / 8;
+}
+.grid_container .fld_dob {
+    grid-area: 4 / 8 / 5 / 12;
+}
+.grid_container .fld_ntnlity {
+    grid-area: 5 / 1 / 6 / 5;
+}
+.grid_container .fld_religion {
+    grid-area: 5 / 5 / 6 / 9;
+}
+.grid_container .fld_m_status {
+    grid-area: 5 / 9 / 6 / 13;
+}
+.grid_container .fld_phone {
+    grid-area: 6 / 1 / 7 / 5;
+}
+.grid_container .fld_alt_phone {
+    grid-area: 6 / 5 / 7 / 10;
+}
+.grid_container .fld_nid {
+    grid-area: 6 / 10 / 7 / 13;
+}
+.grid_container .fld_mail {
+    grid-area: 7 / 1 / 8 / 7;
+}
+.grid_container .fld_tin {
+    grid-area: 7 / 7 / 8 / 12;
+}
+.grid_container .fld_quota {
+    grid-area: 8 / 1 / 9 / 7;
+}
+
+/* second_section */
+.grid_container .fld_prs_address {
+    grid-area: 1 / 1 / 2 / 13;
+}
+.grid_container .fld_prs_upazilla {
+    grid-area: 2 / 1 / 3 / 7;
+}
+.grid_container .fld_prs_p_station {
+    grid-area: 2 / 7 / 3 / 13;
+}
+.grid_container .fld_prs_p_office {
+    grid-area: 3 / 1 / 4 / 7;
+}
+.grid_container .fld_prs_p_code {
+    grid-area: 3 / 7 / 4 / 10;
+}
+
+/* third_section */
+.grid_container .fld_dsg {
+    grid-area: 1 / 1 / 2 / 7;
+}
+.grid_container .fld_dpt {
+    grid-area: 1 / 7 / 2 / 13;
+}
+.grid_container .fld_grade {
+    grid-area: 2 / 1 / 3 / 4;
+}
+.grid_container .fld_post {
+    grid-area: 2 / 4 / 3 / 8;
+}
+.grid_container .fld_rcrt_date {
+    grid-area: 2 / 8 / 3 / 13;
+}
+.grid_container .fld_pay_sc {
+    grid-area: 3 / 1 / 4 / 4;
+}
+.grid_container .fld_hs_rent {
+    grid-area: 3 / 4 / 4 / 7;
+}
+.grid_container .fld_taDa {
+    grid-area: 3 / 7 / 4 / 10;
+}
+.grid_container .fld_gratuity {
+    grid-area: 3 / 10 / 4 / 13;
+}
+.grid_container .fld_bonus {
+    grid-area: 4 / 1 / 5 / 4;
+}
+.grid_container .fld_total {
+    grid-area: 4 / 4 / 5 / 7;
+}
+.grid_container .fld_attndn {
+    grid-area: 4 / 7 / 5 / 10;
+}
+.grid_container .fld_leave {
+    grid-area: 4 / 10 / 5 / 13;
+}
+.grid_container .fld_inc_date {
+    grid-area: 5 / 1 / 6 / 5;
+}
+.grid_container .fld_prfrmnc {
+    grid-area: 5 / 5 / 6 / 8;
+}
+.grid_container .fld_eval {
+    grid-area: 5 / 8 / 6 / 11;
+}
+.grid_container .fld_promo {
+    grid-area: 5 / 11 / 6 / 13;
+}
+.grid_container .fld_project {
+    grid-area: 6 / 1 / 7 / 13;
+}
+
+/* fourth_section */
+.grid_container .fld_certf {
+    grid-area: 1 / 1 / 2 / 9;
+}
+.grid_container .fld_degree {
+    grid-area: 1 / 9 / 2 / 13;
+}
+.grid_container .fld_training {
+    grid-area: 2 / 1 / 3 / 13;
+}
+.grid_container .fld_skill {
+    grid-area: 3 / 1 / 4 / 11;
+}
+
+/* fifth_section */
+.grid_container .fld_cor_stts {
+    grid-area: 1 / 1 / 2 / 4;
+}
+.grid_container .fld_str_date {
+    grid-area: 1 / 4 / 2 / 8;
+}
+.grid_container .fld_end_date {
+    grid-area: 1 / 8 / 2 / 12;
+}
+
+span.field_name {
+    color: #454545;
+    font-weight: 500;
+}
+.com_addr {
+    width: 16px;
+    height: 16px;
+}
+#skill ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#skill ul li {
+    display: inline-block;
+    margin: 0 0.4rem;
+}
+#skill ul li::before {
+    content:'\ffed';
+    margin-right: 0.4rem;
+}
+span.field_data {
+    min-height: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+}
+#first_section span.field_data {
+    max-height: 24px;
+}
+.data_section {
+    margin-bottom: 1rem;
+}
+.highlight {
+    background-color: #f9f9f9;
+    color: #4FC22F;
+    padding: 0.2rem 0.7rem;
+    display: inline-block;
+    font-size: 14px;
+}
+#print .section_heading strong {
+    font-size: 14px;
+}
+.same_addr {
+    color: #4FC22F;
+}
 
 
 /*----------------------------------------*/

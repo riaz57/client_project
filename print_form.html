@@ -1,0 +1,364 @@
+<!doctype html>
+<html  lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Your title</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<!-- all css here -->
+	<!-- choices css -->
+	<link rel="stylesheet" href="css/choices.min.css"/>
+	<!-- bootstrap v5 css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- font-awesome css -->
+	<link rel="stylesheet" href="css/all.min.css">
+	<!-- style css -->
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		h1,h2,h3,h4,h5,h6 {
+			font-family: 'Proza Libre', sans-serif;
+		}
+		h2 {font-size: 25px;}
+		h3 {font-size: 22px;}
+		h4 {font-size: 19px;}
+	</style>
+
+</head>
+<body>
+		<!-- scroll-to-top button -->
+	<div id="scroll_to_top">
+		<a href="#form"><i class="fas fa-arrow-up"></i></a>
+	</div>
+		<!-- sidebar -->
+	<div id="aside_box">
+		<div class="aside_box_content">
+			<ol>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="add_form.html">Add data to Database</a></li>
+				<li><a href="print_form.html">Print form</a></li>
+			</ol>
+		</div>
+	</div>
+
+
+	<div id="printable" style="margin: 4rem auto;">
+
+ 		<page size="A4" class="print">       	
+        	<div id="print">
+        		<div class="form_heading">
+        			<div class="col-2">
+        				<img class="logo" src="img/logo.png" alt="logo">
+        			</div>
+        			<div class="cmp_name col-8 text-center">
+        				<h2 class="text-center mb-2"><strong>Automate Infosys</strong></h2>
+        				<p>14/3A Mirzarpul, Muradpur, Chattogram</p>
+        			</div>
+        			<div class="col-2"></div>
+	            </div>
+
+	            <hr/>
+	            <h4 class="text-center mb-2 pt-2">Employee Information Form</h4>
+
+	            <div id="main">
+	            	<div id="first_section">
+		            	<div class="data_section grid_container">
+		    				<div class="field fld_id">
+		        				<span class="field_name">Id:</span><span class="field_data">00124251</span>
+		        			</div>
+		    				<div class="img_box fld_img">
+		    					<img class="empl_img" name="empl_img" src="img/employee.jpg" alt="employee image">
+		    				</div>
+		    				<div class="field fld_full_name">
+		    					<span class="field_name">Full Name :</span>
+		    					<span class="field_data" name="full_name">Istiak Hossain Saimon</span>
+		        			</div>
+		        			<div class="field fld_ftr_name">
+		    					<span class="field_name">Father's Name :</span>
+		    					<span class="field_data" name="ftr_name">Ali Hossain</span>
+		        			</div>
+		        			<div class="field fld_mtr_name">
+		    					<span class="field_name">Mother's Name :</span>
+		    					<span class="field_data" name="mtr_name">Nur Banu</span>
+		        			</div>
+		        			<div class="field fld_gender">
+            					<span class="field_name">Gender :</span>
+            					<span class="field_data" name="gender">Male</span>
+		            		</div>
+		            		<div class="field fld_blood_gr">
+            					<span class="field_name">Blood Group :</span>
+            					<span class="field_data" name="blood_gr">O (+ve)</span>
+	            			</div>
+	            			<div class="field fld_dob">
+            					<span class="field_name">Date of Birth :</span>
+            					<span class="field_data" name="dob">24/08/1985</span>
+	            			</div>
+	            			<div class="field fld_ntnlity">
+            					<span class="field_name">Nationality :</span>
+            					<span class="field_data" name="ntnlity">Bangladeshi</span>
+	            			</div>
+	            			<div class="field fld_religion">
+            					<span class="field_name">Religion :</span>
+            					<span class="field_data" name="religion">Islam</span>
+	            			</div>
+	            			<div class="field fld_m_status">
+            					<span class="field_name">Marital Status :</span>
+            					<span class="field_data" name="m_status">Unmarried</span>
+	            			</div>
+	            			<div class="field fld_phone">
+            					<span class="field_name">Phone :</span>
+            					<span class="field_data" name="phone">01811545005</span>
+	            			</div>
+	            			<div class="field fld_alt_phone">
+            					<span class="field_name">Alternative Phone :</span>
+            					<span class="field_data" name="alt_phone">01811545005</span>	
+	            			</div>
+	            			<div class="field fld_nid">
+            					<span class="field_name">NID :</span>
+            					<span class="field_data" name="nid">15000054898756545</span>
+	            			</div>
+	            			<div class="field fld_mail">
+            					<span class="field_name">Email :</span>
+            					<span class="field_data" name="mail">automateinfosys@gmail.com</span>
+	            			</div>
+	            			<div class="field fld_tin">
+            					<span class="field_name">TIN :</span>
+            					<span class="field_data" name="tin">45125521010012</span>
+	            			</div>
+	            			<!-- <div class="field fld_quota">
+            					<span class="field_name">Child/Grandchild of Freedom Figher :</span>
+            					<span class="field_data" name="quota">No</span>
+	            			</div> -->
+		            	</div>
+		            </div>
+
+		            <div id="second_section">
+		            	<div class="present_addr">
+			            	<strong class="highlight mb-2">Present Address</strong>
+			            	<div class="data_section grid_container">
+		            			<div class="field fld_prs_address">
+	            					<span class="field_name">Address :</span>
+	            					<span class="field_data" name="prs_address">112/B, Omar Ali Matobbor Road, Chawkbazar, Chattogram</span>
+		            			</div>
+		            			<div class="field fld_prs_upazilla">
+	            					<span class="field_name">Upazilla/Division :</span>
+	            					<span class="field_data" name="prs_upazilla">Chattogram</span>
+		            			</div>
+			            		<div class="field fld_prs_p_station">
+	            					<span class="field_name">Police Station :</span>
+	            					<span class="field_data" name="prs_p_station">Chawkbazar</span>
+			            		</div>
+		            			<div class="field fld_prs_p_office">
+	            					<span class="field_name">Post Office :</span>
+	            					<span class="field_data" name="prs_p_office">Chawkbazar</span>
+		            			</div>
+		            			<div class="field fld_prs_p_code">
+	            					<span class="field_name">Post Code :</span>
+	            					<span class="field_data" name="prs_p_code">4203</span>
+		            			</div>
+			            	</div>
+			            </div>
+			            <div class="permanent_addr">
+			            	<strong class="highlight mb-2">Permanet Address</strong>
+			            	<div class="d-flex align-items-center mb-3">
+			            		<input type="checkbox" class="com_addr" name="com_addr"><strong class="mx-3 same_addr">Same as Present Address</strong>
+			            	</div>
+			            	<div class="data_section grid_container">
+		            			<div class="field fld_prs_address">
+	            					<span class="field_name">Address :</span>
+	            					<span class="field_data" name="prm_address">112/B, Omar Ali Matobbor Road, Chawkbazar, Chattogram</span>
+		            			</div>
+		            			<div class="field fld_prs_upazilla">
+	            					<span class="field_name">Upazilla/Division :</span>
+	            					<span class="field_data" name="prm_upazilla">Chattogram</span>
+		            			</div>
+			            		<div class="field fld_prs_p_station">
+	            					<span class="field_name">Police Station :</span>
+	            					<span class="field_data" name="prm_p_station">Chawkbazar</span>
+			            		</div>
+		            			<div class="field fld_prs_p_office">
+	            					<span class="field_name">Post Office :</span>
+	            					<span class="field_data" name="prm_p_office">Chawkbazar</span>
+		            			</div>
+		            			<div class="field fld_prs_p_code">
+	            					<span class="field_name">Post Code :</span>
+	            					<span class="field_data" name="prm_p_code">4203</span>
+		            			</div>
+			            	</div>
+			            </div>		
+		            </div>
+
+		            <div id="third_section">
+		            	<!-- <div class="section_heading mb-2">
+		            		<strong>Job Related</strong>
+		            	</div> -->
+		            	<div class="data_section grid_container">
+		            		<div class="field fld_dsg">
+            					<span class="field_name">Designation :</span>
+            					<span class="field_data" name="dsg">Hiring & Recruitment Officer</span>
+	            			</div>
+	            			<div class="field fld_dpt">
+            					<span class="field_name">Department :</span>
+            					<span class="field_data" name="dpt">Information Technology</span>
+	            			</div>
+	            			<div class="field fld_grade">
+            					<span class="field_name">Grade :</span>
+            					<span class="field_data" name="grade">Grade 12</span>
+	            			</div>
+	            			<div class="field fld_post">
+            					<span class="field_name">Post :</span>
+            					<span class="field_data" name="post">Manager</span>
+	            			</div>
+	            			<div class="field fld_rcrt_date">
+            					<span class="field_name">Recruitment Date :</span>
+            					<span class="field_data" name="rcrt_date">24/04/2021</span>
+	            			</div>
+	            			<div class="field fld_pay_sc">
+            					<span class="field_name">Pay Scale :</span>
+            					<span class="field_data" name="pay_sc">15500 BDT</span>
+	            			</div>
+	            			<div class="field fld_hs_rent">
+	        					<span class="field_name">House Rent :</span>
+	        					<span class="field_data" name="hs_rent">6500 BDT</span>
+	            			</div>
+	            			<div class="field fld_taDa">
+            					<span class="field_name">TA/DA :</span>
+            					<span class="field_data" name="taDa">1400 BDT</span>
+	            			</div>
+	            			<div class="field fld_gratuity">
+            					<span class="field_name">Gratuity :</span>
+            					<span class="field_data" name="gratuity">1800 BDT</span>
+	            			</div>
+	            			<div class="field fld_bonus">
+            					<span class="field_name">Bonus :</span>
+            					<span class="field_data" name="bonus">2000 BDT</span>
+	            			</div>
+	            			<div class="field fld_total">
+            					<span class="field_name">Total :</span>
+            					<span class="field_data" name="total">15500 BDT</span>
+	            			</div>
+	            			<div class="field fld_attndn">
+            					<span class="field_name">Attendance :</span>
+            					<span class="field_data" name="attndn">286</span>
+	            			</div>
+	            			<div class="field fld_leave">
+            					<span class="field_name">Leave :</span>
+            					<span class="field_data" name="leave">56</span>
+	            			</div>
+	            			<div class="field fld_inc_date">
+            					<span class="field_name">Incremental Date :</span>
+            					<span class="field_data" name="inc_date">12/05/2021</span>
+	            			</div>
+	            			<div class="field fld_prfrmnc">
+            					<span class="field_name">Performance :</span>
+            					<span class="field_data" name="prfrmnc">Good</span>
+	            			</div>
+	            			<div class="field fld_eval">
+            					<span class="field_name">Evaluation :</span>
+            					<span class="field_data" name="eval">Good</span>
+	            			</div>
+	            			<div class="field fld_promo">
+            					<span class="field_name">Promotion :</span>
+            					<span class="field_data" name="promo">No</span>
+	            			</div>
+	            			<div class="field fld_project">
+            					<span class="field_name">Project :</span>
+            					<span class="field_data" name="project">Employee & Data Management System</span>
+	            			</div>
+		            	</div>
+		            </div>		
+
+		            <div id="fourth_section">
+		            	<!-- <div class="section_heading mb-2">
+		            		<strong>Training Profile</strong>
+		            	</div> -->
+		            	<div class="data_section grid_container">
+		            		<div class="field fld_certf">
+            					<span class="field_name">Certificate :</span>
+            					<span class="field_data" name="certf">Masters in Fine Arts</span>
+	            			</div>
+	            			<div class="field fld_degree">
+            					<span class="field_name">Degree :</span>
+            					<span class="field_data" name="degree">M.A</span>
+	            			</div>
+	            			<div class="field fld_training">
+            					<span class="field_name">Training :</span>
+            					<span class="field_data" name="training">1 Years of professional traiing in Responsive Web Design and Front-end Development at Beacon IT</span>
+	            			</div>
+	            			<div class="field fld_skill">
+            					<span class="field_name">Skills :</span>
+            					<span class="field_data" name="skill" id="skill">
+            						<ul>
+            							<li>HTML5</li>
+	            						<li>CSS3</li>
+	            						<li>Bootstrap</li>
+	            						<li>Jquery</li>
+	            						<li>PHP</li>
+            						</ul>
+            					</span>
+	            			</div>
+		            	</div>
+		            </div>	
+		           
+		           <div id="fifth_section">
+		            	<!-- <div class="section_heading mb-2">
+		            		<strong>Health Information</strong>
+		            	</div> -->
+		            	<div class="data_section grid_container">
+		            		<div class="field fld_cor_stts">
+            					<span class="field_name">Corona Status :</span>
+            					<span class="field_data" name="cor_stts">Yes</span>
+	            			</div>
+	            			<div class="field fld_str_date">
+            					<span class="field_name">Start Date :</span>
+            					<span class="field_data" name="str_date">12/04/2021</span>
+	            			</div>
+	            			<div class="field fld_end_date">
+            					<span class="field_name">End Date :</span>
+            					<span class="field_data" name="end_date">29/04/2021</span>
+	            			</div>
+		            	</div>
+		            </div>	
+		            
+	            </div>
+        	</div>
+		</page>
+
+		<div class="my-5 text-center">
+			<button type="button" id="print_btn" class="btn rounded-pill ai_button">Print</button>
+		</div>
+
+    </div>    	
+
+
+		<!-- all js here -->
+	<!-- jquery latest version -->
+	<script src="js/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- choices js -->
+	<script src="js/choices.min.js"></script>
+	<!-- print js -->
+	<script src="js/print.min.js"></script>
+	<!-- custom js -->
+	<script src="js/main.js"></script>
+
+
+
+	<script>
+		$(function() {
+		  $("#printable").find('#print_btn').on('click', function() {
+		    $.print(".print");
+		  });
+		});
+	</script>
+
+
+
+
+
+</body>
+</html>
