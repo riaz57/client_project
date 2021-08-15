@@ -215,7 +215,7 @@ page[size="A4"] {
     font-size: 14px;
     /* background: linear-gradient(109deg, rgba(100, 243, 140, 0.4) 32%, rgba(0, 210, 255, 0.4) 123%); */
     /* background: linear-gradient(106deg, rgba(0, 136, 255, 0.3) -28.62%, rgba(160, 51, 255, 0.2) 36.39%, rgba(255, 92, 135, 0.35) 98.74%); */
-    background: linear-gradient(110deg, rgba(255, 255, 136, 0.5) -22%, rgba(133, 255, 185, 0.4)  67%, rgba(43, 202, 255, 0.4) 107%);
+    background: linear-gradient(110deg, rgba(255, 255, 136, 0.5) -22%, rgba(133, 255, 185, 0.2)  67%, rgba(43, 202, 255, 0.4) 107%);
     margin-right: auto;
     margin-left: auto;
     position: absolute;
