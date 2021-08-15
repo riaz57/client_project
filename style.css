@@ -179,7 +179,8 @@ label {
 /*----------------------------------------*/
 
 page {
-    /* background-color: #fff; */
+    background-color: #fff;
+    background: transparent;
     display: block;
     margin: 0 auto;
     box-shadow: 0 0 14px 0 rgba(0,0,0,0.3);
@@ -189,25 +190,38 @@ page[size="A4"] {
     width: 21cm;
     height: 29.7cm; 
 }
+/* #bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21cm;
+    height: 29.7cm;
+    background: url('img/bg.jpg');
+    filter: blur(1rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+} */
 @media print {
   body, page {
     margin: 0;
     box-shadow: none;
   }
 }
-.logo {
-    max-width: 70px;
-}
 #print {
     width: 100%;
     height: 100%;
     font-size: 14px;
-    padding: 1.7rem 1.5rem;
     /* background: linear-gradient(109deg, rgba(100, 243, 140, 0.4) 32%, rgba(0, 210, 255, 0.4) 123%); */
     /* background: linear-gradient(106deg, rgba(0, 136, 255, 0.3) -28.62%, rgba(160, 51, 255, 0.2) 36.39%, rgba(255, 92, 135, 0.35) 98.74%); */
     background: linear-gradient(110deg, rgba(255, 255, 136, 0.5) -22%, rgba(133, 255, 185, 0.4)  67%, rgba(43, 202, 255, 0.4) 107%);
     margin-right: auto;
     margin-left: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 #print hr {
     margin: 0.5rem 0;
@@ -215,6 +229,17 @@ page[size="A4"] {
 .form_heading {
     display: flex;
     align-items: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.form_heading .title {
+    color: #4FE22F;
+    letter-spacing: 2px;
+}
+.logo {
+    max-width: 70px;
+}
+.form_title {
+    color: #353535;
 }
 .cmp_name p {
     font-size: 16px;
@@ -400,6 +425,9 @@ span.field_name {
     font-weight: 500;
 }
 .com_addr {
+    margin: 0.5rem 0.2rem 0.4rem 2rem;
+}
+.com_addr input {
     width: 16px;
     height: 16px;
 }
@@ -419,20 +447,22 @@ span.field_name {
 span.field_data {
     min-height: 24px;
     font-weight: 700;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px dashed #000;
 }
-#first_section span.field_data {
+#first_section span.field_data, #first_section span.field_name {
     max-height: 24px;
 }
 .data_section {
-    margin-bottom: 1rem;
+    margin: 0.5rem 1rem;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
 }
-.highlight {
-    background-color: #f9f9f9;
-    color: #4FC22F;
-    padding: 0.2rem 0.7rem;
-    display: inline-block;
-    font-size: 14px;
+.permanent_addr .section_heading, .present_addr .section_heading {
+    margin-left: 1.5rem;
+}
+.permanent_addr .section_heading strong, .present_addr .section_heading strong {
+    margin: 0.2rem 0;
 }
 #print .section_heading strong {
     font-size: 14px;

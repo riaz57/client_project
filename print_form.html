@@ -22,7 +22,7 @@
 		h1,h2,h3,h4,h5,h6 {
 			font-family: 'Proza Libre', sans-serif;
 		}
-		h2 {font-size: 25px;}
+		h2 {font-size: 26px;}
 		h3 {font-size: 22px;}
 		h4 {font-size: 19px;}
 	</style>
@@ -47,21 +47,23 @@
 
 	<div id="printable" style="margin: 4rem auto;">
 
- 		<page size="A4" class="print">       	
+ 		<page size="A4" class="print">  
+			<div id="bg"></div> 
+
         	<div id="print">
         		<div class="form_heading">
         			<div class="col-2">
         				<img class="logo" src="img/logo.png" alt="logo">
         			</div>
         			<div class="cmp_name col-8 text-center">
-        				<h2 class="text-center mb-2"><strong>Automate Infosys</strong></h2>
+        				<h2 class="title text-center mb-2"><strong>Automate Infosys</strong></h2>
         				<p>14/3A Mirzarpul, Muradpur, Chattogram</p>
         			</div>
         			<div class="col-2"></div>
 	            </div>
 
 	            <hr/>
-	            <h4 class="text-center mb-2 pt-2">Employee Information Form</h4>
+	            <h4 class="form_title text-center mb-2 pt-2">Employee Information Form</h4>
 
 	            <div id="main">
 	            	<div id="first_section">
@@ -137,7 +139,9 @@
 
 		            <div id="second_section">
 		            	<div class="present_addr">
-			            	<strong class="highlight mb-2">Present Address</strong>
+		            		<div class="section_heading">
+		            			<strong>Present Address</strong>
+		            		</div>
 			            	<div class="data_section grid_container">
 		            			<div class="field fld_prs_address">
 	            					<span class="field_name">Address :</span>
@@ -162,9 +166,11 @@
 			            	</div>
 			            </div>
 			            <div class="permanent_addr">
-			            	<strong class="highlight mb-2">Permanet Address</strong>
-			            	<div class="d-flex align-items-center mb-3">
-			            		<input type="checkbox" class="com_addr" name="com_addr"><strong class="mx-3 same_addr">Same as Present Address</strong>
+			            	<div class="section_heading">
+			            		<strong class="highlight">Permanet Address</strong>
+			            	</div>
+			            	<div class="com_addr d-flex align-items-center">
+			            		<input type="checkbox" name="com_addr"><strong class="mx-3 same_addr">Same as Present Address</strong>
 			            	</div>
 			            	<div class="data_section grid_container">
 		            			<div class="field fld_prs_address">
@@ -331,8 +337,7 @@
 			<button type="button" id="print_btn" class="btn rounded-pill ai_button">Print</button>
 		</div>
 
-    </div>    	
-
+    </div>   
 
 		<!-- all js here -->
 	<!-- jquery latest version -->
