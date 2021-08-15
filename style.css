@@ -3,7 +3,7 @@
 /*  1.  Theme default CSS
 /*----------------------------------------*/
 
-#background {
+body#background {
     background-image: linear-gradient(to right bottom, #a8ff78 13%, #78ffd6 115%);
     min-height: 100vh;
     overflow-y: auto;
@@ -28,11 +28,11 @@ li {
     padding: 2rem;
     border-radius: 0.75rem;
     border: none;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
     min-height: 73vh;
 }
 #form .card {
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3));
     backdrop-filter: blur(2rem);
 }
 #scroll_to_top {
