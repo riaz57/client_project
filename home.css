@@ -291,11 +291,32 @@ nav .heading span {
 
 @media (max-width: 500px) {
 
+  body {
+    font-size: 14px;
+  }
   .helpline a.button {
     font-size: 17px;
   }
   #background h1 {
-    font-size: 36px;
+    font-size: 38px;
+  }
+  .slide .slide_text p {
+    font-size: 16px;
+  }
+  .quote span {
+    font-size: 17px;
+  }
+  .quote p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  #background h1 {
+    font-size: 30px;
   }
 
 }
