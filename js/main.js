@@ -1,7 +1,7 @@
 $(function(){
 
         // carousel slider
-	$('.slide_outer').owlCarousel({
+	$('#monitorscreen').owlCarousel({
         loop:true,
         margin:0,
         mouseDrag:false,

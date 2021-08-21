@@ -175,25 +175,73 @@ nav .heading span {
 
   /*========= slider area css ============*/
 #slider_area {
-  background: #f6f6f6;
+  width: 100%;
   padding: 20px 0;
+  background: #f6f6f6;
   margin-bottom: 80px;
 }
-.slide_outer {
-  width: 100%;
+#monitor_container {
+  max-width: 900px;
+  margin: auto;
+}
+#monitor {
+  background: #090909; 
+  position: relative;
+  border-top: 3px solid #888;
+  margin: 3%;
+  padding: 2% 2% 4% 2%; 
+  border-radius: 10px; 
+  border-bottom-left-radius: 50% 2%; 
+  border-bottom-right-radius: 50% 2%; 
+  transition: margin-right 1s;
+}
+#monitor::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 3%;
+  left: 36%;
+  height: .5%; 
+  width: 28%;
+  background: #ddd; 
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0 white; 
+}
+#monitorscreen {
+  position: relative;
+  background-color: #777;
+  background-size: cover; 
+  background-position: top center;
+  height: 450px;
+  overflow: hidden;
+}
+.slide {
+  height: 450px;
   position: relative;
 }
-.slide .slide_text {
+.slide .slide_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background: rgba(25, 25, 45, 0.85);
+  box-shadow: 5px 0 15px 3px rgba(255, 255, 255, 0.6);
 }
-.slide .slide_text p {
-  margin-bottom: 0;
-  font-size: 18px;
+.slide img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
 }
-.slide_outer .owl-prev, .slide_outer .owl-next {
+.slide .slide_caption span {
+  font-size: 20px;
+  color: var(--light-color);
+}
+#monitorscreen .owl-prev, #monitorscreen .owl-next {
   height: 40px;
   width: 40px;
   text-align: center;
@@ -210,15 +258,15 @@ nav .heading span {
   box-shadow: var(--box-shadow);
   border-radius: 50%;
 }
-.slide_outer .owl-prev i, .slide_outer .owl-next i {
+#monitorscreen .owl-prev i, #monitorscreen .owl-next i {
   line-height: 40px;
   font-size: 20px;
 }
-.slide_outer .owl-prev {
-  left: -80px;
+#monitorscreen .owl-prev {
+  left: 5px;
 }
-.slide_outer .owl-next {
-  right: -80px;
+#monitorscreen .owl-next {
+  right: 5px;
 }
 
   /*========= quotation area css ============*/
@@ -257,6 +305,9 @@ nav .heading span {
 /*===================== 
     Responsive CSS
 =======================*/
+
+
+
 @media (max-width: 768px) {
   
   nav .heading {
@@ -269,24 +320,40 @@ nav .heading span {
     font-size: 20px;
     padding: 6px 16px;
   }
+  #monitorscreen {
+    height: 380px;
+  }
+  .slide {
+    height: 380px;
+  }
   #slider_area {
     margin-bottom: 40px;
   }
-  .slide_outer .owl-next {
-    right: 0;
-  }
-  .slide_outer .owl-prev {
-    left: 0;
-  }
-  .slide_outer .owl-prev, .slide_outer .owl-next {
+  #monitorscreen .owl-prev, #monitorscreen .owl-next {
     height: 35px;
     width: 35px;
-    top: 100%;
   }
-  .slide_outer .owl-prev i, .slide_outer .owl-next i {
+  #monitorscreen .owl-prev i, #monitorscreen .owl-next i {
     line-height: 35px;
   }
 
+}
+
+@media (max-width: 600px) {
+  #monitorscreen {
+    height: 300px;
+  }
+  .slide {
+    height: 300px;
+  }
+  .slide .slide_caption span {
+    font-size: 15px;
+  }
+  .slide .slide_caption {
+    box-shadow: 2px 0 8px 2px rgba(255, 255, 255, 0.6);
+    padding: 5px;
+  }
+  
 }
 
 @media (max-width: 500px) {
@@ -303,6 +370,25 @@ nav .heading span {
   .slide .slide_text p {
     font-size: 16px;
   }
+  #monitorscreen {
+    height: 200px;
+  }
+  #monitorscreen .owl-prev, #monitorscreen .owl-next {
+    height: 22px;
+    width: 22px;
+  }
+  #monitorscreen .owl-prev i, #monitorscreen .owl-next i {
+    line-height: 22px;
+  }
+  #monitorscreen .owl-prev i, #monitorscreen .owl-next i {
+    font-size: 16px;
+  }
+  .slide {
+    height: 200px;
+  }
+  .slide .slide_caption span {
+    font-size: 14px;
+  }
   .quote span {
     font-size: 17px;
   }
@@ -313,6 +399,15 @@ nav .heading span {
 
 }
 
+@media (max-width: 350px) {
+  #monitorscreen {
+    height: 140px;
+  }
+  .slide {
+    height: 140px;
+  }
+}
+
 @media (max-width: 320px) {
 
   #background h1 {
@@ -320,3 +415,5 @@ nav .heading span {
   }
 
 }
+
+
