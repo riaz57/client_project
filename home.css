@@ -185,7 +185,7 @@ nav .heading span {
   margin: auto;
 }
 #monitor {
-  background: #090909; 
+  background: #080808; 
   position: relative;
   border-top: 3px solid #888;
   margin: 3%;
@@ -205,19 +205,19 @@ nav .heading span {
   width: 28%;
   background: #ddd; 
   border-radius: 50%;
-  box-shadow: 0 0 3px 0 white; 
+  box-shadow: 0 0 3px 0 white;
 }
 #monitorscreen {
+  width: 100%;
+  height: 450px;
   position: relative;
-  background-color: #777;
+  background-color: #cfcfcf;
   background-size: cover; 
   background-position: top center;
-  height: 450px;
   overflow: hidden;
 }
 .slide {
   height: 450px;
-  position: relative;
 }
 .slide .slide_caption {
   position: absolute;
@@ -229,13 +229,13 @@ nav .heading span {
   align-items: center;
   justify-content: center;
   padding: 8px;
-  background: rgba(25, 25, 45, 0.85);
-  box-shadow: 5px 0 15px 3px rgba(255, 255, 255, 0.6);
+  background: rgba(25, 25, 45, 0.9);
+  border-top: 1px solid #fff;
 }
 .slide img {
-  object-fit: contain;
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 .slide .slide_caption span {
   font-size: 20px;
@@ -257,16 +257,27 @@ nav .heading span {
   color: #363636;
   box-shadow: var(--box-shadow);
   border-radius: 50%;
+  -webkit-transition: 0.5s ease;
+     -moz-transition: 0.5s ease;
+      -ms-transition: 0.5s ease;
+       -o-transition: 0.5s ease;
+          transition: 0.5s ease;
 }
 #monitorscreen .owl-prev i, #monitorscreen .owl-next i {
   line-height: 40px;
   font-size: 20px;
 }
 #monitorscreen .owl-prev {
-  left: 5px;
+  left: -50px;
 }
 #monitorscreen .owl-next {
-  right: 5px;
+  right: -50px;
+}
+#monitorscreen:hover .owl-prev {
+  left: 10px;
+}
+#monitorscreen:hover .owl-next {
+  right: 10px;
 }
 
   /*========= quotation area css ============*/
@@ -300,7 +311,6 @@ nav .heading span {
   font-size: 20px;
   font-weight: 600;
 }
-
 
 /*===================== 
     Responsive CSS
