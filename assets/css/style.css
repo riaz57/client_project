@@ -1,0 +1,268 @@
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+* 04.ABOUT CSS STYLE
+* 05. WORK EXPERIENCE & EDUCATION CSS STYLE
+* 06.SERVICE CSS STYLE
+* 07.WORK CSS STYLE
+* 08.TESTIMONIAL CSS STYLE
+* 09.SOCIAL CSS STYLE
+* 10.CONTACT CSS STYLE
+* 11.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+:root {
+    --primary-color: #0088FF;
+    --light-color: #fff;
+    --text-color: #555;
+    --dark-color: #000;
+}
+@font-face {
+    font-family: 'Kalpurush';
+    src: url('/assets/custom/Kalpurush.ttf') format('ttf');
+    font-family: 'SolaimanLipi';
+    src: url('/assets/custom/SolaimanLipi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    padding: 0;
+    margin: 0;
+}
+body {
+    line-height: 1.6;
+    background: var(--light-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-family: 'SolaimanLipi',sans-serif !important;
+}
+h1, h2 ,h3, h4, h5, h6 {
+    font-family: 'Kalpurush',sans-serif !important;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+}
+.container {
+  max-width: 1250px !important;
+  width: 100% !important;
+}
+.sp {
+    padding: 80px 0;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.HEADER STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+header {
+    background-color: var(--primary-color);
+    padding: 10px 0;
+}
+.header_logo {
+    width: 80px;
+    height: 80px;
+    display: inline-flex;
+}
+.header_logo img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+header .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_inner h1 {
+    font-size: 34px;
+    margin-bottom: 0;
+    color: var(--light-color);
+}
+
+.top_news {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+}
+.top_news marquee {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.top_news marquee span {
+    font-size: 22px;
+    color: #df393f;
+    font-weight: 600;
+    padding: 0 15px;
+}
+.top_news .news_heading {
+    background: #ff393f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.top_news .news_heading span {
+    background: #ff393f;
+    color: var(--light-color);
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.top_news .news_heading i {
+    color: var(--light-color);
+
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.SLIDER STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#slider_area {
+    display: flex;
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+#slider_area::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 14%, rgba(0,0,0,0) 75%);
+    z-index: 2;
+}
+#slider_area .slide {
+    width: 100%;
+    height: 420px;
+}
+#slider_area .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#slider_area .owl-prev, #slider_area .owl-next {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+     -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+       -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+    background: #f2f2f2;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    color: var(--text-color);
+    border-radius: 50%;
+    -webkit-transition: 0.5s ease;
+     -moz-transition: 0.5s ease;
+      -ms-transition: 0.5s ease;
+       -o-transition: 0.5s ease;
+          transition: 0.5s ease;
+    z-index: 99;
+}
+#slider_area .owl-prev i, #slider_area .owl-next i {
+    line-height: 40px;
+    font-size: 20px;
+}
+#slider_area .owl-prev {
+    left: -50px;
+}
+#slider_area .owl-next {
+    right: -50px;
+}
+#slider_area:hover .owl-prev {
+    left: 20px;
+}
+#slider_area:hover .owl-next {
+    right: 20px;
+}
+.helpline a.button {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  font-size: 24px;
+  background: #ff393f;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+  color: var(--light-color);
+  padding: 5px 18px;
+  border-radius: 50px;
+  z-index: 99;
+}
+.helpline a.button::before {
+  content: '\f879';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--light-color);
+  margin-right: 10px;
+}
+.helpline a.button:hover {
+  background: #ff0000;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.INFO STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.info_box {
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    margin: 20px 0;
+}
+.info_box .info_box_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.8rem 0.8rem 0 0;
+    padding: 15px;
+    font-size: 20px;
+}
+.info_box_heading h5 {
+    font-size: 18px;
+    color: #f9f9f9;
+}
+.info_box .info_para {
+    padding: 20px;
+    font-size: 18px;
+    background: #f7f7f7;
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+.info_para p {
+    margin-bottom: 5px;
+}
+.info_para a {
+    text-decoration: underline;
+}
+.info_box_heading .box_icon {
+    fill: #f9f9f9;
+    width: 45px;
+    margin-right: 24px;
+}
