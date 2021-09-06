@@ -23,7 +23,7 @@
 */
 
 :root {
-    --primary-color: #4610ef;
+    --primary-color: #4010ef;
     --light-color: #fff;
     --offwhite: #f7f7f7;
     --text-color: #555;
@@ -377,4 +377,18 @@ footer .footer_column {
 }
 .footer_column .helpline ul li span {
     margin-right: 15px;
+}
+.footer_column .comment form {
+    text-align: left;
+}
+form input, form textarea, form option {
+    border-radius: 8px !important;
+    font-size: 17px !important;
+}
+form input:focus, form textarea:focus, form option:focus {
+    box-shadow: 0 0 0 2px rgba(30, 10, 236, 0.3) !important;
+}
+footer form .load_more {
+    padding: 5px 22px;
+    font-size: 16px;
 }
