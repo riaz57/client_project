@@ -42,12 +42,15 @@
 	}
 
 
-
 }	
 /* Wide Mobile Layout: 480px. */
 @media (max-width: 480px) { 
+	body {
+		line-height: 1.4;
+	}
 	.header_inner h1 {
 	    font-size: 22px;
+	    padding: 0 7px;
 	}
 	.header_logo {
 	    width: 50px;
@@ -76,11 +79,36 @@
 	#slider_area:hover .owl-next {
 	    right: 10px;
 	}
+	.heading {
+	    padding: 5px;
+	}
 	.info_box_heading .box_icon {
 	    width: 35px;
 	}
 	.helpline a.button {
 	    font-size: 17px;
+	}
+	.info_box .info_para {
+	    padding: 10px;
+	}
+	.info_box {
+	    margin: 8px 0;
+	}
+	#service .info_box {
+	    padding: 15px;
+	}
+	.load_more {
+	    padding: 6px 20px;
+	}
+	.footer_column ul {
+	    display: flex;
+	    justify-content: space-evenly;
+	    flex-wrap: wrap;
+	}
+	.footer_column ul li {
+	    margin-right: 10px;
+	    display: inline-block;
+	    padding: 2px 0;
 	}
 
 }

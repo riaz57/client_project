@@ -23,7 +23,7 @@
 */
 
 :root {
-    --primary-color: #6f1fef;
+    --primary-color: #4610ef;
     --light-color: #fff;
     --offwhite: #f7f7f7;
     --text-color: #555;
@@ -343,7 +343,6 @@ header .header_inner {
     color: var(--primary-color);
     border: 1px solid var(--primary-color);
 }
-
 
 /*
 * ----------------------------------------------------------------------------------------
