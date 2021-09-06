@@ -27,6 +27,10 @@
 	    width: 65px;
 	    height: 65px;
 	}
+	.header_logo img {
+	    width: 65px;
+	    height: 65px;
+	}
 	.helpline a.button {
 	    font-size: 20px;
 	}
@@ -62,6 +66,10 @@
 	    padding: 0 7px;
 	}
 	.header_logo {
+	    width: 50px;
+	    height: 50px;
+	}
+	.header_logo img {
 	    width: 50px;
 	    height: 50px;
 	}

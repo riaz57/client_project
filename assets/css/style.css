@@ -99,7 +99,8 @@ header {
     display: inline-flex;
 }
 .header_logo img {
-    width: 100%;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -288,9 +289,6 @@ header .header_inner {
 }
 .info_para p {
     margin-bottom: 5px;
-}
-.info_para a {
-    text-decoration: underline;
 }
 .info_box_heading .box_icon {
     fill: var(--offwhite);
