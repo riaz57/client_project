@@ -307,6 +307,7 @@ header .header_inner {
 }
 #service .info_box {
     padding: 25px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.2);
 }
 #service .service_heding strong {
     display: inline-block;
