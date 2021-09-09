@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>বঙ্গমাতা শেখ ফজিলতুন্নেসা মুজিব</title>
+
+    <!-- fevicon -->
+    <link rel="icon" href="assets/img/favicon.jpg" type="image/x-icon" sizes="16x16">
+
+    <!-- bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link href="assets/css/all.min.css" rel="stylesheet">
+
+    <!-- lightbox -->
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- responsive -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id="wrapper">
+    <!-- ==================================================
+                    Gallery Area
+    =================================================== -->
+        <div class="container">
+            <div class="gallery_inner section_margin">
+                <h2 class="heading text-center">গ্যালারি</h2>
+                <div id="gallery_control" class="heading">
+                    <li data-filter="*" class="active">All</li>
+                    <li data-filter=".festival">Festival</li>
+                    <li data-filter=".annual">Annual Function</li>
+                    <li data-filter=".sports">Sports</li>
+                    <li data-filter=".religious">Religious Function</li>
+                </div>
+                <div id="gallery_area">
+                    <div class="container">
+                        <div class="row g-2 m-0 p-0">
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item festival">
+                                <a href="assets/img/slide/1.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/1.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item festival">
+                                <a href="assets/img/slide/2.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/2.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item festival annual">
+                                <a href="assets/img/slide/3.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/3.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item annual">
+                                <a href="assets/img/slide/2.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/2.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item annual">
+                                <a href="assets/img/slide/1.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/1.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item sports">
+                                <a href="assets/img/slide/3.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/3.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-6 gallery_item religious">
+                                <a href="assets/img/slide/2.jpg" data-lightbox="image" data-title="My caption"><img src="assets/img/slide/2.jpg" class="img-fluid" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="date">
+        <h1></h1>
+    </div>
+
+    <!-- jquery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="assets/js/lightbox.min.js"></script>
+
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+
+    <script>
+        // init Isotope
+        var $grid = $('#gallery_area').isotope({
+            itemSelector: '.gallery_item',
+            layoutMode: 'masonry',
+            transitionDuration: 600
+        });
+        // filter items on button click
+        $('#gallery_control').on( 'click', 'li', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+        });    
+    </script>
+
+
+</body>
+</html>
