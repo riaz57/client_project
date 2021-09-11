@@ -7,7 +7,7 @@
 
 :root {
     --primary-color: #009F9D;
-    --secondary-color: #1edea5;
+    --secondary-color: #009F9D;
     --light-color: #fff;
     --dark-color: #000;
     --offwhite-color: #f6f6f6;
@@ -20,8 +20,8 @@ html {
 @font-face {
     font-family: 'Kalpurush';
     src: url('/assets/custom/Kalpurush.ttf') format('ttf');
-    /*font-family: 'SolaimanLipi';
-    src: url('/assets/custom/SolaimanLipi.ttf');*/
+    font-family: 'Rajonshoily';
+    src: url('/assets/custom/Rajon_Shoily.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -117,6 +117,7 @@ header .header_area {
 }
 .header_area .logo {
     padding: 10px;
+    display: flex;
 }
 .logo a img {
     max-width: 100px;
@@ -125,11 +126,15 @@ header .header_area {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 7px;
 }
 .header_area .main_title h1 {
-    font-size: 32px;
+    font-size: 38px;
+    margin: 0;
     padding: 0 10px;
     text-align: right;
+    font-family: 'Galada', cursive;
+    color: var(--primary-color);
 }
 .header_area .main_title h1 span {
     font-size: 60px;
@@ -265,7 +270,14 @@ nav .nav_bottom form {
     font-size: 12px;
     display: inline-block;
 }
-
+#searchbar_mobile {
+    display: none;
+}
+#searchbar_mobile nav .nav_top {
+    display: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 /*
 * ----------------------------------------------------------------------------------------
 * 04.About STYLE
@@ -283,6 +295,7 @@ nav .nav_bottom form {
 }
 #about .about_item {
     border-radius: 0.8rem;
+    height: 100%;
 }
 .about_item .preface_text, .about_item .about_text {
     padding: 60px;
@@ -302,16 +315,18 @@ nav .nav_bottom form {
 }
 .about_item .more_button[aria-expanded="true"]::before {
     content: 'পূর্বের অবস্থায় যান';
-}
-.about_item .preface_img, .about_item .about_img {
-    text-align: left;
 } 
+.about_item .preface_img, .about_item .about_img {
+    padding-bottom: 60px;
+}
 .about_item .preface_img img, .about_item .about_img img {
-    width: 100%;
+    width: 240px;
+    height: 270px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 5px 3px 8px 0px rgb(0 0 0 / 68%);
 }
-.about_item .preface_img img {
-    width: 50%;
-}
+
 
 /*
 * ----------------------------------------------------------------------------------------

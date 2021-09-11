@@ -9,9 +9,6 @@
 	.section_margin {
 	    margin: 30px 0;
 	}
-	.header_area .main_title h1 {
-	    font-size: 26px;
-	}
 	.header_area .main_title h1 span {
 	    font-size: 45px;
 	}
@@ -38,15 +35,6 @@
 	.about_item .preface_text, .about_item .about_text {
 	    padding: 40px 70px;
 	}
-	.about_item .preface_img img {
-	    width: 32%;
-	}
-	.about_item .about_img img {
-	    width: 50%;
-	}
-	.about_item .preface_img, .about_item .about_img {
-	    text-align: center;
-	} 
 	.info_box {
 	    margin: 10px 0;
 	}
@@ -69,6 +57,9 @@
 	}
 	#hero_area h4 {
 	    font-size: 19px;
+	}
+	.header_area .main_title h1 {
+	    font-size: 32px;
 	}
  	.nav_top .nav_info .number {
 	    font-size: 22px;
@@ -105,6 +96,9 @@
 	.top_news marquee span {
 	    font-size: 17px;
 	}
+	.header_area nav {
+		display: none
+	}
 	nav .nav_bottom {
 	    margin-top: 8px;
 	    margin-bottom: 5px;
@@ -121,11 +115,11 @@
 	.header_area .logo {
 	    padding: 5px;
 	}
+	.header_area .logo a {
+	    margin: 0 10px;
+	}
 	.header_area .main_title h1 span {
 	    font-size: 34px;
-	}
-	.header_area .main_title h1 {
-	    font-size: 22px;
 	}
 	#hero_area {
 		padding: 18px;
@@ -133,17 +127,14 @@
 	#hero_area h4 {
 	    font-size: 17px;
 	}
-	.about_item .preface_img img {
-	    width: 65%;
-	}
-	.about_item .about_img img {
-	    width: 100%;
+	#searchbar_mobile {
+		display: block;
 	}
 	.about_item .preface_text, .about_item .about_text {
 	    padding: 40px 15px;
 	}
 	.info_box .info_para {
-	    height: 150px;
+	    height: 190px;
 	}
 	.gallery_inner .gallery_area {
 	    grid-template-columns: 1fr 1fr;
