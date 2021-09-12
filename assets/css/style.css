@@ -80,7 +80,7 @@ ul {
     background: transparent;
 }
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 12px;
 }
 ::-webkit-scrollbar-track {
     background: #d0ddd0;
@@ -97,8 +97,9 @@ ul {
 */
 
 #topbar {
-    background-color: var(--primary-color);
+    /*background-color: var(--primary-color);*/
     color: var(--light-color);
+    background: #029291;
 }
 #topbar .topbar {
     display: flex;
@@ -129,13 +130,10 @@ header .header_area {
     justify-content: center;
     padding: 7px;
 }
-.header_area .main_title h1 {
-    font-size: 38px;
+.header_area .main_title img {
     margin: 0;
-    padding: 0 10px;
-    text-align: right;
-    font-family: 'Galada', cursive;
-    color: var(--primary-color);
+    padding: 0 15px;
+    max-width: 390px;
 }
 .header_area .main_title h1 span {
     font-size: 60px;
@@ -193,16 +191,16 @@ nav .nav_bottom form {
 
 #hero_area {
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    padding: 25px;
+    padding: 20px 10px 0 10px;
 }
 #hero_area img {
     width: 100%;
-    height: 350px;
+    height: 300px;
     object-fit: cover;
 }
 #hero_area::before {
@@ -223,7 +221,7 @@ nav .nav_bottom form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     position: relative;
     z-index: 9;
 }
@@ -235,11 +233,14 @@ nav .nav_bottom form {
     font-size: 17px;
 }
 .hero_text .call_to_action {
-    margin-top: 10%;
     display: flex;
 }
 .call_to_action a {
-    padding: 10px 30px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--primary-color);
     color: var(--light-color);
     border:  transparent;
@@ -251,7 +252,6 @@ nav .nav_bottom form {
             transition: all 0.5s ease;
     text-decoration: none;
     font-weight: 600;
-    display: inline-block;
 }
 .call_to_action a.apply {
     background: var(--light-color);
@@ -479,6 +479,12 @@ nav .nav_bottom form {
     object-fit: cover;
     height: 100%;
     width: auto;
+    filter: saturate(25%);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.gallery_area .gallery_item img:hover {
+    filter: saturate(100%);
 }
 .gallery_button {
     margin:  20px 0;
@@ -529,6 +535,12 @@ nav .nav_bottom form {
     height: 280px;
     width: 100%;
     object-fit: cover;
+    filter: saturate(25%);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.cutting_item img:hover {
+    filter: saturate(100%);
 }
 
 /*
