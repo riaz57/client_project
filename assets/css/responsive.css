@@ -9,9 +9,6 @@
 	.section_margin {
 	    margin: 30px 0;
 	}
-	.header_area .main_title h1 span {
-	    font-size: 45px;
-	}
 	.logo a img {
     	max-width: 80px;
 	}
@@ -28,9 +25,6 @@
 	    order: 0;
 	    width: 100%;
 	    background-color: var(--light-color);
-	}
-	.header_area .main_title img {
-		max-width: 500px;
 	}
 	#about {
 	    grid-template-columns: 1fr;
@@ -131,9 +125,6 @@
 	.header_area .logo a {
 	    margin: 0 10px;
 	}
-	.header_area .main_title h1 span {
-	    font-size: 34px;
-	}
 	#hero_text h4 {
 	    font-size: 16px;
 	}
@@ -202,6 +193,9 @@
 	    width: 210px;
 	    height: 230px;
 	}
+	.info_box_heading h5 {
+	    font-size: 16px;
+	}
 	.info_box_heading .box_icon {
 	    width: 36px;
 	}
@@ -211,6 +205,9 @@
  	#gallery {
 	    padding: 30px 10px;
 	    grid-gap: 0.4rem;
+	}
+	.gallery_inner .gallery_area {
+	    grid-template-columns: 1fr 1fr;
 	}
 	#paper_cutting {
 	    padding: 30px 10px; 

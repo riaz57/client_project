@@ -128,15 +128,11 @@ header .header_area {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7px;
+    padding: 5px;
 }
 .header_area .main_title img {
     margin: 0;
-    padding: 0 15px;
-    max-width: 390px;
-}
-.header_area .main_title h1 span {
-    font-size: 60px;
+    padding: 0 10px;
 }
 .header_area nav {
     display: flex;
@@ -159,6 +155,7 @@ nav .nav_top {
     align-self: flex-start;
     display: inline-block;
     margin-right: 20px;
+    min-width: 65px;
 }
 .nav_top .nav_info .number {
     font-size: 26px;
