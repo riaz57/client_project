@@ -66,6 +66,7 @@ ul {
     color: var(--light-color);
     background: var(--primary-color);
     border:  1px solid var(--primary-color);
+    font-weight: 600;
     padding: 8px 26px;
     text-decoration: none;
     -webkit-transition: all 0.4s ease;
@@ -193,9 +194,6 @@ nav .nav_bottom form {
 #hero_area {
     width: 100%;
     height: 350px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -215,16 +213,71 @@ nav .nav_bottom form {
     top: 0;
     left: 0;
     right: 0;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 14%, rgba(0,0,0,0) 61%);
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    -webkit-background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
     z-index: 2;
 }
 #hero_area .hero_text {
-    position: absolute;
-    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
 }
-#hero_area h4 {
+.hero_text h4 {
+    position: absolute;
+    right: 0;
+    top: 0;
     color: var(--light-color);
-    font-size: 22px;
+    font-size: 17px;
+}
+.hero_text .call_to_action {
+    margin-top: 10%;
+    display: flex;
+}
+.call_to_action a {
+    padding: 10px 30px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    border:  transparent;
+    margin: 5px;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+         -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+}
+.call_to_action a.apply {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+.call_to_action a:hover {
+    background: var(--light-color);
+    color: var(--primary-color);
+}
+.call_to_action a.apply:hover {
+    background: var(--primary-color);
+    color: var(--light-color);
+}
+.call_to_action a i {
+    margin-right: 12px;
+}
+.transparent_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to left bottom, rgba(0,0,0,0.65) 9%, rgba(0,0,0,0) 45%);
+    -webkit-background-image: linear-gradient(to left bottom, rgba(0,0,0,0.65) 9%, rgba(0,0,0,0) 45%);
 }
 
 .top_news {
@@ -430,6 +483,9 @@ nav .nav_bottom form {
 .gallery_button {
     margin:  20px 0;
 }
+.gallery_button a i {
+    margin-left: 12px;
+}
 .notice .notice_area {
     height: 300px;
     border: 2px solid #ccc;
@@ -475,8 +531,6 @@ nav .nav_bottom form {
     object-fit: cover;
 }
 
-
-
 /*
 * ----------------------------------------------------------------------------------------
 * 7.Footer STYLE
@@ -508,7 +562,6 @@ footer a:hover {
     margin-right: 30px;
     color: var(--light-color);
 }
-
 .copyright_area {
     background: #202f2f;
     padding: 10px 0;

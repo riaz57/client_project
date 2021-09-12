@@ -63,9 +63,6 @@
 	    grid-template-columns: 1fr 1fr;
 	    grid-column-gap: 1rem;
 	}
-	#hero_area h4 {
-	    font-size: 19px;
-	}
 	.header_area .main_title h1 {
 	    font-size: 32px;
 	}
@@ -105,6 +102,10 @@
 	.top_news marquee span {
 	    font-size: 17px;
 	}
+	.hero_text .call_to_action {
+	    flex-direction: column;
+	    
+	}
 	.header_area nav {
 		display: none
 	}
@@ -133,8 +134,8 @@
 	#hero_area {
 		padding: 18px;
 	}
-	#hero_area h4 {
-	    font-size: 17px;
+	#hero_text h4 {
+	    font-size: 16px;
 	}
 	#searchbar_mobile {
 		display: block;
@@ -188,8 +189,11 @@
 	.top_news .news_heading span {
 	    font-size: 16px;
 	}
+	.hero_text h4 {
+	    font-size: 15px;
+	}
 	.about_item .preface_img img, .about_item .about_img img {
-	    width: 215px;
+	    width: 210px;
 	    height: 230px;
 	}
 	.info_box_heading .box_icon {
