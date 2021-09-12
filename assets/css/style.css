@@ -528,6 +528,9 @@ nav .nav_bottom form {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
+.cutting_item {
+    margin-bottom: 10px;
+}
 .cutting_item img {
     height: 280px;
     width: 100%;
@@ -537,6 +540,33 @@ nav .nav_bottom form {
     -webkit-transition: 0.3s ease;
 }
 .cutting_item img:hover {
+    filter: saturate(100%);
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.Map STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+#map_area {
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+.road_map, .process_map {
+    margin-bottom: 15px;
+    height: 300px;
+}
+.process_map img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: saturate(25%);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+}
+.process_map img:hover {
     filter: saturate(100%);
 }
 
