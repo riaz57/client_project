@@ -551,12 +551,15 @@ nav .nav_bottom form {
 
 #map_area {
     width: 100%;
+    padding: 10px 10px;
     padding-top: 40px;
     margin-bottom: 30px;
 }
 .road_map, .process_map {
     margin-bottom: 15px;
-    height: 300px;
+}
+.road_map p, .process_map p {
+    margin-bottom: 0;
 }
 .process_map img {
     width: 100%;
