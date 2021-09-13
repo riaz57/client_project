@@ -31,6 +31,15 @@ $(function(){
         nav:false,
         dots:true,
         items:1,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                dots:false
+            },
+            600 : {
+                dots:true
+            }
+        },
         mouseDrag:false,
         touchDrag:false,
         animateOut: 'fadeOut',

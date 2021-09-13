@@ -97,6 +97,9 @@
 	.nav_top .nav_info .title {
 	    margin-right: 10px;
 	}
+	.call_to_action {
+		flex-direction: column;
+	}
 	.top_news marquee span {
 	    font-size: 17px;
 	}
@@ -127,6 +130,10 @@
 	}
 	#hero_text h4 {
 	    font-size: 16px;
+	}
+	#hero_area .slider_info {
+	    align-items: flex-start;
+	    justify-content: center;
 	}
 	#searchbar_mobile {
 		display: block;
