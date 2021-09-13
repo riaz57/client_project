@@ -89,6 +89,25 @@ ul {
     background: var(--secondary-color);
     border-radius: 50rem;
 }
+#scroll_to_top {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    bottom: 40px;
+    right: 35px;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+}
+#scroll_to_top a {
+    color: var(--light-color);
+}
 
 /*
 * ----------------------------------------------------------------------------------------
@@ -264,6 +283,15 @@ nav .nav_bottom form {
 }
 .call_to_action a i {
     margin-right: 12px;
+}
+.call_to_action a.helpline {
+    align-items: center;
+    background: var(--light-color);
+    color: #ef1630;
+}
+.call_to_action a.helpline:hover {
+    background: #ef1630;
+    color: var(--light-color);
 }
 .transparent_bg {
     width: 100%;

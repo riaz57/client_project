@@ -90,6 +90,13 @@
 		background: #fff;
 		line-height: 1.5!important;
 	}
+	#scroll_to_top {
+	    bottom: 20px;
+	    right: 15px;
+	}
+	#scroll_to_top a {
+	    font-size: 12px
+	}
 	header .header_area {
 	    justify-content: center
 	}
