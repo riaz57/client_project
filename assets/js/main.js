@@ -21,6 +21,26 @@
 
 $(function(){
 
+    $('#slider_area').owlCarousel({
+        loop:true,
+        margin:0,
+        mouseDrag:false,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav:false,
+        dots:true,
+        items:1,
+        mouseDrag:false,
+        touchDrag:false,
+        animateOut: 'fadeOut',
+        autoplaySpeed:1500,
+        smartSpeed: 1000,
+        navSpeed:1500,
+        navText: ['<i class="fas fa-angle-left"><i>','<i class="fas fa-angle-right"><i>'],
+        navElement: 'a'
+    });
+
     function scrollBtn() {
         let windowHeight = $(window).scrollTop(); 
 
