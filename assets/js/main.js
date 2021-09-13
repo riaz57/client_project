@@ -21,26 +21,20 @@
 
 $(function(){
 
+    function scrollBtn() {
+        let windowHeight = $(window).scrollTop(); 
 
+        if (windowHeight > 200) {
+            $('#scroll_to_top').fadeIn('400');
+        }
+        else {
+            $('#scroll_to_top').fadeOut('400');
+        }  
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $(window).on('scroll', function(){
+        scrollBtn();
+    });
+    scrollBtn();
 
 });
